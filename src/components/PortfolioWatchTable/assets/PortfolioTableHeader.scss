@@ -1,0 +1,57 @@
+@import "../../../assets/scss/utils/colors";
+@import "../../../assets/scss/utils/sizes";
+
+.portfolio-table-header-container {
+    padding: 0 13px;
+    padding-left: 13px;
+    padding-top: 11px;
+    
+    .portfolio-table-header {
+        background-color: $ultra-ligh-gray;
+        border-radius: 4px;
+        display: flex;
+        padding: 8px 0;
+        font-size: 13px;
+       
+        @mixin column {
+            display: flex;
+            color: #989494;
+            font-size: 12px;
+            align-items: center;
+            padding-right: 3px;
+        }
+        .header-column {
+            @include column;
+            span {
+                color: #989494;
+            }
+            .sort {
+                i {
+                    font-size: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .sperated-header-column {
+            span {
+                color: #989494;
+            }
+            @include column;
+            .sort {
+                i {
+                    font-size: 5px;
+                    margin-right: 5px;
+                }
+            }
+            .title-sort {
+                &:last-child::before {
+                    content: "/";
+                    font-size: 11px;
+                    margin-left: 4px;
+                    margin-top: 2px;
+                    color: $gray-header;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../../assets/scss/utils/colors';
+
+.symbol-change-table {
+    $font-size: 13px;
+    * {
+        font-size: $font-size;
+    }
+    .cell {
+        text-align: center;
+        z-index: 1;
+    }
+    .asymmetric{
+        color: #dbdbdb;
+    }
+    .number {
+        width: 23%;
+    }
+    .volume {
+        width: 47%;
+    }
+    .price {
+        width: 29%;
+    }
+    .head {
+        .header-row {
+            display: flex;
+            padding: 2px 0;
+            background-color: $light-gray;
+            div {
+                text-align: center;
+            }
+        }
+    }
+    .body {
+        .row {
+            transition: 0.3s ease-in-out;
+            &.is-out-of-range {
+                color: $gray-text;
+            }
+            position: relative;
+            display: flex;
+            border-bottom: 1px solid $gray;
+            padding: 2px 0;
+            height: 24px;
+            .precent {
+                top: 0;
+                left: 0;
+                height: 100%;
+                transition: 0.3s ease-in-out;
+                position: absolute;
+                background-color: #00C288;
+                opacity: 25%;
+                &.is-reverse {
+                    left: unset;
+                    right: 0;
+                    background-color: #FF526D;
+                    opacity: 25%;
+                }
+            }
+        }
+    }
+}

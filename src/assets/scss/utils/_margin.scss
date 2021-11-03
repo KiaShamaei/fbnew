@@ -1,0 +1,74 @@
+@import 'breakpoints';
+
+$sizes: (
+    0: 0px,
+    1: 4px,
+    2: 8px,
+    3: 10px,
+    5: 20px,
+    4: 16px,
+    8: 32px,
+    9 : 50px,
+    12: 64px
+);
+
+@each $size, $size-in-pixel in $sizes {
+    .mr-#{$size} {
+        margin-right: $size-in-pixel !important;
+    }
+    .ml-#{$size} {
+        margin-left: $size-in-pixel !important;
+    }
+    .mt-#{$size} {
+        margin-top: $size-in-pixel !important;
+    }
+    .mb-#{$size} {
+        margin-bottom: $size-in-pixel !important;
+    }
+    .mx-#{$size} {
+        margin-left: $size-in-pixel !important;
+        margin-right: $size-in-pixel !important;
+    }
+    .my-#{$size} {
+        margin-top: $size-in-pixel !important;
+        margin-bottom: $size-in-pixel !important;
+    }
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+        @media (min-width: $breakpoint-value) {
+            .mb-#{$breakpoint-name}-#{size} {
+                margin-bottom: $size-in-pixel !important;
+            }
+            .mr-#{$breakpoint-name}-#{$size} {
+                margin-right: $size-in-pixel !important;
+            }
+            .ml-#{$breakpoint-name}-#{$size} {
+                margin-left: $size-in-pixel !important;
+            }
+            .mt-#{$breakpoint-name}-#{$size} {
+                margin-top: $size-in-pixel !important;
+            }
+        }
+    }
+    @media (min-width: 1583px) {
+        .mb-xl-#{size} {
+            margin-bottom: $size-in-pixel !important;
+        }
+        .mr-xl-#{$size} {
+            margin-right: $size-in-pixel !important;
+        }
+        .ml-xl-#{$size} {
+            margin-left: $size-in-pixel !important;
+        }
+        .mt-xl-#{$size} {
+            margin-top: $size-in-pixel !important;
+        }
+    }
+}
+
+.my-auto {
+    margin: auto 0;
+}
+
+.m-auto {
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+@import '../../../assets/scss/utils/colors';
+
+$draft-sell: #E38488;
+$draft-buy: #71c5ac;
+$current-order-header: #264369;
+$current-order-item-bg: #182F4D;
+$current-order-text: #819bbd;
+$current-order-text-darker: #638abd;
+
+$colors-obj: (
+    sell-draft: $draft-sell,
+    buy-draft: $draft-buy,
+    buy: $green,
+    sell: $red,
+    current-order-header: $current-order-header,
+);

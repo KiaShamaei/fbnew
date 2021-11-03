@@ -1,0 +1,33 @@
+.news-slider {
+    overflow-x: hidden;
+    height: 36px;
+    position: relative;
+    .news-container {
+        width: 200%;
+        transition: left 0.8s linear;
+    }
+    $timeout: 400ms;
+    /* ANIMATIONS */
+    .slide-item {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .slide-enter {
+        
+        transform: translateX(100%);
+    }
+    .slide-enter-active {
+        transform: translateX(0%) translateY(-50%);
+        transition: transform $timeout ease-in-out;
+    }
+    .slide-exit {
+        transform: translateX(0%) translateY(-50%);
+    }
+    .slide-exit-active {
+        transform: translateX(-100%) translateY(-50%);
+        transition: transform $timeout ease-in-out;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="./favicons/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="./favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="./favicons/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./favicons/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./favicons/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16.png">
+  <link rel="apple-touch-icon" href="./favicons/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicons/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicons/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicons/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicons/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicons/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicons/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicons/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="./favicons/favicon-144.png">
+  <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <script type="text/javascript">
+    if (screen.width <= 699) { document.location = "https://beta-app.rabin.ir"; }
+  </script>
+  <script language=javascript>
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+       location.replace("https://beta-app.rabin.ir");
+    }
+  </script>
+
+  <title>&#x0631;&#x0627;&#x0628;&#x06cc;&#x646; &#x007c; &#x0052;&#x0061;&#x0062;&#x0069;&#x006e;</title>
+  <meta name="keywords" content="مدبر,آتی سکه,طلا,آپشن,معاملات آنلاین,رابین,سهام,بورس,اوراق بهادار,بازارسرمایه,نقشه بازار,IME,TSETMC,Codal,Sena,Rabin,Trade,Trading,Modaber">
+  <meta name="description" content="Rabin Trader رابین تریدر" />
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trader.rabin.ir">
+  <meta property="og:site_name" content="Rabin">
+  <meta property="og:title" content="Rabin Trader رابین تریدر">
+  <meta property="og:description" content="سامانه معامله‌گر رابین, همه ابزارهای مناسب جهت انجام معامله موفق را در اختیار شما قرار می‌دهد">
+  <meta property="og:image" content="https://beta-trader.rabin.ir/favicons/favicon-64.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://trader.rabin.ir">
+  <meta property="twitter:title" content="Rabin Trader رابین تریدر">
+  <meta property="twitter:description" content="سامانه معامله‌گر رابین, همه ابزارهای مناسب جهت انجام معامله موفق را در اختیار شما قرار می‌دهد">
+  <meta property="twitter:image" content="https://beta-trader.rabin.ir/favicons/favicon-96.png">
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./tradingView/charting_library/datafeeds/udf/dist/bundle.js"></script>
+  <script src="./tradingView/charting_library/charting_library.standalone.js"></script>
+  <script>
+    //window.TradingView = TrandingView;
+    //window.DataFeed = DataFeed;
+  </script>
+</body>
+
+</html>

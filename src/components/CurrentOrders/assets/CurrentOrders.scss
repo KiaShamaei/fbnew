@@ -1,0 +1,92 @@
+@import "./colors";
+
+.current-orders {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: $current-order-header;
+    $width: 420px;
+    padding: 0 6px;
+    width: $width;
+    z-index: 20;
+    position: fixed;
+    transition: 0.3s ease;
+    top: 0;
+    left: -$width;
+    &.is-open {
+        left: 0;
+    }
+    * {
+        color: white;
+    }
+
+    @each $name, $color in $colors-obj {
+        .#{$name} {
+            background-color: $color;
+        }
+    }
+
+    .current-orders-toggler {
+        $size: 25px;
+        position: absolute;
+        right: -$size;
+        top: 50%;
+        width: $size;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-bottom-right-radius: $size / 2;
+        border-top-right-radius: $size / 2;
+        transform: translateY(-50%);
+        background-color: $current-order-header;
+        cursor: pointer;
+        i {
+            font-size: 14px;
+        }
+    }
+
+    .list-container {
+        height: 100%;
+        width: 100%;
+        $scroll-height: 92%;
+
+        .scroll-view {
+            height: $scroll-height !important;
+            overflow-y: scroll;
+            width: 100%;
+        }
+        .scroll-tracker {
+            height: $scroll-height !important;
+        }
+        .scroll-thumb {
+            background-color: rgb(211, 211, 211);
+        }
+    }
+    .common-loading {
+        .loading-spinner {
+            top: 10%;
+        }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #264369;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #587ba5;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        
+        background: rgb(47, 104, 173);
+    }
+}

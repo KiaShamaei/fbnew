@@ -1,0 +1,12 @@
+.notification-type {
+    .checkboxes {
+        margin-top: 8px;
+        font-size: 13px;
+        .checkbox-container {
+            &:first {
+                margin-left: 0;
+            }
+            margin-left: 15px;
+        }
+    }
+}

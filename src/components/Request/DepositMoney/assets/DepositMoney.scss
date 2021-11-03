@@ -1,0 +1,32 @@
+.deposit-money-dialog {
+    .dialog {
+        width: 850px;
+        .dialog-body {
+            padding: 8px 24px;
+            .title {
+                font-size: 14px;
+            }
+            .button {
+                padding: 4px;
+                height: 33px;
+                margin-top: 25px;
+            }
+    
+            .banking-portal {
+                width: 100%;
+            }
+    
+            .amount {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+.direction-ltr {
+    direction: ltr;
+}
+.amount-to-char{
+    font-size: 10px;
+    margin-top: 8px;
+}

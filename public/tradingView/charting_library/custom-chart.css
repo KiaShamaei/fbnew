@@ -1,0 +1,98 @@
+﻿@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebboldfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebthinfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebthinfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebthinfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebthinfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../../iranYekan/fonts/eot/iranyekanweblightfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanweblightfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebregularfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebregularfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebregularfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebregularfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebmediumfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebmediumfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebmediumfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebmediumfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebextraboldfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebextraboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebextraboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebextraboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 850;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebblackfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebblackfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebblackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebblackfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../../iranYekan/fonts/eot/iranyekanwebextrablackfanum.eot');
+	src: url('../../iranYekan/fonts/eot/iranyekanwebextrablackfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../../iranYekan/fonts/woff/iranyekanwebextrablackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../../iranYekan/fonts/ttf/iranyekanwebextrablackfanum.ttf') format('truetype');
+}
+
+* {
+    font-family: iranyekan;
+    font-size:12px;
+}
+
+html.theme-light .group-wWM3zP_M- {
+    background: #fff !important;
+}
+html.theme-dark .group-wWM3zP_M- {
+    background: #000 !important;
+}
+
+.series-12hzsxbp .titleWrapper-1Zs2rjQ6, .item-3cgIlGYO, .toolbar-2MJefnwP {
+    font-size: 13px;
+}
+.item-3eXPhOmy {
+    font-size: 11px;
+}

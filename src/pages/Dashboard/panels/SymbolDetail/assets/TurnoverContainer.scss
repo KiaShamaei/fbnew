@@ -1,0 +1,35 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.symbol-turnover-legal {
+    padding: 6px;
+    .main-title {
+        font-weight: 600;
+        font-size: 14px;
+        &.green {
+            color: $green;
+        }
+        &.red {
+            color: $red;
+        }
+    }
+    @mixin real-legal {
+        font-weight: 400;
+        font-size: 11px;
+        @media screen and (max-width: 1550px) {
+            font-size: 12px;
+        }
+    }
+    .legal {
+        @include real-legal;
+        transform: translateX(10px);
+    }
+    .real {
+        @include real-legal;
+        transform: translateX(-10px);
+    }
+    @media screen and (max-width: 10px){
+        &.right {
+            transform: translateX(10px);
+        }
+    }
+}

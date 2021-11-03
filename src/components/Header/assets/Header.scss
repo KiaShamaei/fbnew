@@ -1,0 +1,42 @@
+@import '../../../assets/scss/utils/colors';
+
+.main-header {
+    height: 60px;
+    display: flex;
+    background-color: white;
+    * {
+        white-space: nowrap;
+    }
+    .logo-container {
+        margin: 15px 0;
+        margin-right: 8px;
+        img {
+            height: 31px;
+        }
+    }
+    .title{
+        margin-right: 30px;
+    }
+    .active {
+        color: $green;
+    }
+
+    .user-widget {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 1550px) {
+        .title{
+            margin-right: 0px;
+        }
+        .user-widget {
+            width: unset;
+        }
+        .info .overall-index {
+            margin-left: 0;
+        }
+        .info .info-section {
+            margin: auto 7px;
+        }
+    }
+}

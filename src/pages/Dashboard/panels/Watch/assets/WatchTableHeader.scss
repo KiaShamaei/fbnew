@@ -1,0 +1,15 @@
+@import 'sizes';
+
+.watch-table-header {
+    .symbol {
+        width: $symbol-size;
+    }
+
+    .last {
+        width: $last-size;
+    }
+
+    .final {
+        width: $final-size;
+    }
+}

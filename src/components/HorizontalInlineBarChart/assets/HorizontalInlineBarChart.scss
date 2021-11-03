@@ -1,0 +1,18 @@
+@import '../../../assets/scss/utils/colors';
+
+.horizontal-inline-bar-chart {
+    height: 5px;
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+    overflow: hidden;
+    .red {
+        background-color: $red;
+    }
+    .green {
+        background-color: $green;
+    }
+    .gray {
+        background-color: $gray;
+    }
+}

@@ -1,0 +1,51 @@
+
+@import "../../../../assets/scss/utils/colors";
+.market-map-footer {
+  background-color: #262931;
+  position: relative;
+  width: 100vw;
+  padding: 12px 0;
+  overflow: hidden;
+  .wrapper-market {
+    animation-name: move-market-map;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    z-index: 10;
+    @keyframes move-market-map {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+      1% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(1960px, 0);
+        opacity: 1;
+      }
+    }
+    .list-items {
+      display: flex;
+      .item {
+        margin: 0 20px;
+        .symbol {
+          color: #9598a1;
+          margin: 0 10px;
+        }
+        .price {
+          color: #fff;
+          margin: 0 10px;
+        }
+        .status{
+          direction: ltr;
+        }
+      }
+    }
+  }
+  .wrapper-market.stop {
+    animation-play-state: paused;
+  }
+}

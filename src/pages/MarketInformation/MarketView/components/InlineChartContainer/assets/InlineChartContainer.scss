@@ -1,0 +1,26 @@
+@import '../../../../../../assets/scss/utils/colors';
+
+
+.main-inline-container { 
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  .header-inline-container {
+    display: flex;
+    height: 60px;
+    border-radius: 5px 5px 0 0;
+    border:1px solid transparent;
+    background-color: $gray;
+    .donut-filter {
+        justify-content: center;
+    }
+    .active {
+        border-bottom: 3px solid $blue;
+        color: $blue;
+    }
+
+}
+  .active {
+    border-bottom: 3px solid $blue;
+    color: $blue;
+}
+}

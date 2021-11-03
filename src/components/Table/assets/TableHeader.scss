@@ -1,0 +1,82 @@
+@import '../../../assets/scss/utils/colors';
+
+
+
+.table-header {
+    display: flex;
+    font-weight: normal;
+    position: relative;
+    background-color: $ultra-ligh-gray;
+    padding: 4px 0; 
+    .table-header-cell {
+        position: relative;
+        color: $gray-text-2;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 14px;
+        .resizer {
+            display: inline-block;
+            width: 3px;
+            height: 100%;
+            background-color: $gray;
+            cursor: col-resize;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .sort {
+            transition: transform, opacity 0.2s ease-in-out;
+            display: inline-block;
+            margin-right: 3px;
+            font-size: 9px;
+            &.desc {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+
+.watch-table-header {
+    .f-s-12{
+        font-size: 12px;
+    }
+    font-weight: normal;
+    display: flex;
+    position: relative;
+    .table-header-cell {
+        position: relative;
+        color: $gray-text;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 12px;
+        .resizer {
+            display: inline-block;
+            width: 3px;
+            height: 100%;
+            background-color: $gray;
+            cursor: col-resize;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .border-top {
+            border-top: 1px;
+        }
+        .border-left { 
+            border-left: 1px solid rgb(202, 194, 194);
+        }
+        .border-top {
+            border-top: 1px solid rgb(202, 194, 194);
+        }
+        .sort {
+            transition: transform, opacity 0.2s ease-in-out;
+            display: inline-block;
+            margin-right: 3px;
+            font-size: 9px;
+            &.desc {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

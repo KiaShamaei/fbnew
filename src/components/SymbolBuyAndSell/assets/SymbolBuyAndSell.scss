@@ -1,0 +1,93 @@
+@import '../../../assets/scss/utils/colors';
+
+.symbol-form-dialog {
+    overflow: visible !important;
+    
+    .symbol-form-dialog-header {
+        color: white;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .title {
+            margin: auto;
+            span{
+                color: #fff;
+            }
+        }
+        .arrow {
+            display: block;
+            margin: auto 4px;
+            color: white;
+        }
+    }
+    &.is-chart-section-collapsed {
+        .dialog {
+            width: 330px;
+        }
+        .symbol-form-dialog-header {
+            .title {
+                margin-right: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 250px;
+                text-overflow: ellipsis;
+            }
+
+            .arrow {
+                transform: rotate(180deg);
+            }
+        }
+        .buy-and-sell-form-chart {
+            display: none;
+        }    
+    }
+    .dialog {
+        width: 330px + 494px;
+        .dialog-body {
+            padding: 0;
+        }
+    }
+    .symbol-form {
+        width: 330px;
+        padding: 8px 24px ;
+        background-color: $buy-and-sell-form-gray;
+        border-bottom-right-radius: 5px;
+        
+        .combobox {
+            .icon {
+                i {
+                    color: $gray-text-2;
+                }
+            }   
+        }
+    }
+
+    .online-icon-close-2 {
+        color: $red;
+    }
+
+    .buy-and-sell-form-chart {
+        padding: 16px 32px;
+        width: 494px;
+    }
+
+    button {
+        &.disabled {
+            &.blue {
+                background-color: rgba($color: $blue, $alpha: 0.6);
+                cursor: default;
+                &:hover {
+                    background-color: rgba($color: $blue, $alpha: 0.6);
+                }
+            }
+            &.yellow {
+                background-color: rgba($color: $yellow, $alpha: 0.6);
+                cursor: default;
+                &:hover {
+                    background-color: rgba($color: $yellow, $alpha: 0.6);
+                }
+            }
+        }
+    }
+
+}

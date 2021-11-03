@@ -1,0 +1,11 @@
+@import '../../../../assets/scss/utils/colors';
+
+.request-button {
+    &.disabled {
+        background-color: rgba($color: $blue, $alpha: 0.6) !important;
+        cursor: default;
+        &:hover {
+            background-color: rgba($color: $blue, $alpha: 0.6) !important;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../../assets/scss/utils/colors';
+
+.affective-symbol {
+    .title {
+        margin-left: 4px;
+        color: $gray-text-2;
+        white-space: nowrap;
+    }
+    .value {
+        margin-left: 4px;
+    }
+}

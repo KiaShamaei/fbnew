@@ -1,0 +1,192 @@
+.buy-and-sell-form-container {
+  .input-number {
+    position: relative;
+    input {
+      text-align: left;
+      direction: ltr;
+      background-clip: content-box;
+      width: 80%;
+    }
+    .calculator {
+      position: absolute;
+      top: 14%;
+      left: 0%;
+      height: 85%;
+      width: 30px;
+      background-color: #264369;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      i {
+        font-size: 1.3rem;
+      }
+    }
+    .calculator.active {
+      i.online-icon-calculator {
+        color: #0c91e9 !important;
+      }
+    }
+  }
+  .input-validityType {
+    width: 95% !important;
+  }
+  .input-price {
+    .input-core input {
+      text-align: left;
+      direction: ltr;
+    }
+    .min-max-price {
+      display: none !important;
+    }
+    i.online-icon-chain {
+      display: none !important;
+    }
+  }
+  .input-invest {
+    .input-core {
+      width: 98%;
+    }
+    input {
+      text-align: left;
+      direction: ltr;
+    }
+  }
+  .price-up-down {
+    display: none;
+  }
+  .header-container {
+    justify-content: space-between;
+  }
+  input {
+    padding: 8px;
+  }
+  .number {
+    width: 45%;
+    input {
+      padding-left: 4px;
+      direction: ltr;
+      text-align: left;
+      font-size: 12px;
+      padding-left: 27px;
+    }
+  }
+  .price {
+    margin-right: 4px;
+    flex-grow: 1;
+    input {
+      direction: ltr;
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+  .total-amount.number {
+    input {
+      padding-left: 3px !important;
+    }
+  }
+
+  .display-size {
+    width: 33.3333% !important;
+  }
+
+  .m-between {
+    & > div {
+      &:first-child {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+      input {
+        font-size: 12px;
+      }
+      margin-left: 4px;
+    }
+    .input-core {
+      .price-up-down {
+        display: none;
+      }
+    }
+  }
+
+  .icon {
+    height: 100%;
+    padding-right: 4px;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+  }
+
+  .costs {
+    font-size: 13px;
+  }
+
+  .symbol-change-chart {
+    margin-top: 40px;
+  }
+
+  .buttons {
+    margin-top: 26px;
+    .save-btn {
+      width: 75%;
+      text-align: center;
+      margin-left: 4px;
+    }
+  }
+  .form .combobox .items .item {
+    color: #000;
+  }
+  .slider-container {
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 0 !important;
+    .slider {
+      margin-top: 16px;
+    }
+  }
+  .date-picker {
+    width: 200px;
+    bottom: -50px;
+    z-index: 20;
+    .day {
+      color: #000 !important;
+    }
+    .day-container.is-friday {
+      .day {
+        color: #ff526d !important;
+      }
+    }
+    .day-name {
+      color: #000;
+    }
+    i.online-icon-left-arrow,
+    i.online-icon-right-arrow {
+      color: #000;
+    }
+  }
+  .combobox {
+    .items {
+      border: 0 !important;
+      top: 0% !important;
+      background-color: #182f4d !important;
+      .item {
+        color: #fff !important;
+      }
+      .item.hovered{
+        background-color: rgba($color: #fff, $alpha: .5);
+      }
+      .item.selected{
+        background-color: rgba(#0b284d, $alpha: 1);
+      }
+      .item.hovered,
+      .item.selected {
+        color: #fff !important;
+      }
+    }
+  }
+}

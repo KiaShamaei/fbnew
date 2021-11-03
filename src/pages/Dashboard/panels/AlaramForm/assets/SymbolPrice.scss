@@ -1,0 +1,25 @@
+@import "../../../../../assets/scss/utils/colors";
+
+.symbol-price {
+    
+    .time-duration {
+        label {
+            font-size: 14px;
+            font-weight: 300;
+            color: $gray-text;
+            display: block;
+            margin: 16px 0;
+        }
+        .time-duration-radio-button {
+            &:first {
+                margin-left: 0;
+            }
+            .radio-title {
+                white-space: nowrap;
+                font-size: 12.5px;
+            }
+            margin-left: 32px;
+        }
+    }
+
+}

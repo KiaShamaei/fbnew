@@ -1,0 +1,59 @@
+@import '../../../assets/scss/utils/colors';
+
+.calender {
+    $font-size: 13.5px;
+    .day-names {
+        display: flex;
+        .day-name {
+            font-size: $font-size;
+            width: #{(100 / 7)}#{"%"};
+            text-align: center;
+            padding: 8px 0;
+            &.is-friday {
+                color: $red;
+            }
+        }
+        border-bottom: 1px solid $gray;
+    }
+    .days {
+        display: flex;
+        flex-wrap: wrap;
+        .day-container {
+            width: #{(100 / 7)}#{"%"};
+            padding-bottom: #{(100 / 7)}#{"%"};
+            position: relative;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid #aaaaaa;
+            }
+            &.disable {
+                opacity: 0.5; 
+            }
+            &.is-today {
+                border: 1px solid $gray;
+                background-color: $light-gray;
+            }
+            &.is-friday {
+                .day {
+                    color: $red;
+                }
+            }
+            &.selected {
+                border: 2px solid $blue;
+                font-weight: 500;
+                .day {
+                    color: $blue;
+                }
+            }
+            .day {
+                font-size: $font-size;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

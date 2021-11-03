@@ -1,0 +1,16 @@
+@import '../../../../assets/scss/utils/colors';
+
+
+
+.main-technical {
+  background-color: white;
+  height: 100%;
+  .header-technical {
+    height: 50px;
+    background-color: $blue;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.15);
+  .text-white {
+    color: white;
+  }
+  }
+}

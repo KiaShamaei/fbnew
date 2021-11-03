@@ -1,0 +1,34 @@
+export interface ISymbol {
+    id?: number;
+    name?: string;
+    title?: string;
+    color?: string;
+    lastPrice?: number;
+    sectorCode?: string;
+    lastPricePercent?: number;
+    izin?: string;
+    instantaneousValue?: number;
+    number?: number;
+    last?: number;
+    lastPercent?: number;
+    final?: number;
+    finalPercent?: number;
+    status?: string;
+    transactionsValue?: number;
+    turnover?: number;
+    critics?: number;
+    baseVolume?: number;
+    marketValue?: number;
+    PE?: number;
+    property?: [number, number];
+    propertyDiffrence?: number;
+    marketType?: string;
+    theFirstPrice?: number;
+    dayInterval?: [number, number];
+    impactOnTheIndex?: number;
+    thresholdCount?: [number, number];
+    theLastDeal?: string;
+    EPS?: number;
+    PEGroup?: number;
+    isActive?: boolean;
+}

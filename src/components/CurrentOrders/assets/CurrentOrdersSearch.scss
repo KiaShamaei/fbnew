@@ -1,0 +1,23 @@
+@import './colors';
+
+@keyframes fade-in {
+    
+}
+
+.current-orders-search {
+    margin: 5px 0;
+    .input-core {
+        border: none;
+        input {
+            background-color: $current-order-item-bg;
+            &::placeholder {
+                color: #5D789C;
+            }
+        }
+        .icon {
+            margin-left: 4px;
+            background-color: transparent;
+        }
+        background-color: $current-order-item-bg;
+    }
+}

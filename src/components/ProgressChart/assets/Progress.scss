@@ -1,0 +1,14 @@
+@import '../../../assets/scss/utils/colors';
+
+
+.progress-chart {
+  background-color: $gray;
+    border-radius: 5px;
+    .real {
+      height: 7px;
+      border-radius: 5px;
+    }
+  }
+  .direction-ltr {
+    direction: ltr;
+  }

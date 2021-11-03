@@ -1,0 +1,57 @@
+@import "../../../../../assets/scss/utils/colors";
+
+.stock-returns {
+  padding-bottom: 90px;
+  .stoke-return-chart {
+    $chart-gray: #edf2f2;
+    @mixin chart {
+      top: 0;
+      height: 100%;
+      position: absolute;
+    }
+
+    @mixin chart-container {
+      width: 100%;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      height: 14px;
+      margin-top: 2px;
+      background-color: $chart-gray;
+      .value {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        direction: ltr;
+        font-size: 14px;
+      }
+    }
+
+    .damage-container {
+      @include chart-container;
+      .damage {
+        @include chart;
+        right: 0;
+        background-color: $red;
+      }
+    }
+
+    .profit-container {
+      @include chart-container;
+      .profit {
+        @include chart;
+        font-size: 12px;
+        left: 0;
+        background-color: $green;
+      }
+    }
+
+    .scope {
+      margin: auto 0;
+      width: 145px;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}

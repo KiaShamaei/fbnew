@@ -1,0 +1,32 @@
+@import '../../../assets/scss/utils/colors';
+
+.battery {
+    $width: 8px;
+    $height: 16px;
+
+    width: $width;
+    height: $height;
+    position: relative;
+
+    .battery-border {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .battery-value-container {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 75%;
+        width: 100%;
+        .battery-value {
+            width: 51%;
+            left: 37%;
+            bottom: 18%;
+            position: absolute;
+            background-color: #00c288;
+        }
+    }
+
+}

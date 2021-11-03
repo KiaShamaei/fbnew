@@ -1,0 +1,2 @@
+export const SET_VISITOR_ID = 'SET_VISITOR_ID'
+export const FETCH_VISITOR_ID = 'FETCH_VISITOR_ID'

@@ -1,0 +1,91 @@
+@keyframes marqueeInfinite {
+    0% {
+        transform: translateX(0%);
+    }
+    // 0.5% {
+    //     transform: translate3d(0%, 0, 0);
+    // }
+    // 1% {
+    //     transform: translate3d(0%, 0, 0);
+    // }
+    100% {
+        transform: translateX(53%);
+    }
+}
+
+.effective-symbols-container {
+    overflow: hidden;
+    display: flex;
+    font-size: small;
+    .title{
+        width: 120px;
+        display: flex;
+        align-items: center;
+
+    }
+    .item {
+        display: flex;
+        height: 38px;
+        
+       
+    }
+    .move {
+        display: flex;
+        animation: marqueeInfinite linear infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+        .item {
+            padding: 0 32px;
+        }
+    }
+
+    .ipo {
+        display: flex;
+        .button {
+            padding: 3px;
+            white-space: nowrap;
+        }
+        .ipo-text {
+            white-space: nowrap;
+            font-size: 15px;
+        }
+    }
+    .impact-detail {
+        display: flex;
+        justify-content: space-around;
+        width: 140px;
+    }
+    .impact-title {
+        color: rgb(136, 136, 136);
+    }
+    .impact{
+        direction: ltr;
+    }
+    .impact-percent {
+        direction: ltr;
+        .possetive {
+            color: #00c288;
+
+            i {
+                color: #00c288;
+                font-size: 8px;
+                margin: 0 3px;
+                transform: rotate(90deg);
+            }
+        }
+        .negative {
+            direction: ltr;
+            .negativespan {
+                color: #e23752;
+                direction: ltr;
+            }
+
+            i {
+                color: #e23752;
+                font-size: 8px;
+                margin: 0 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../../../assets//scss//utils/colors';
+.main-watch-chart {
+  .header-style {
+    height: 50px;
+    padding : 0px 20px;
+    border-radius: 5px;
+    background-color: $gray;
+  }
+  .item-row-className {
+    height: 500px !important;
+  }
+  .h-500px {
+    height: 500px;
+  }
+  height: 100%;
+  
+  .text-dark {
+    color : $black
+  }
+  .text-align-left {
+    text-align: left  ;
+  }
+  .text-align-right {
+    text-align: right;
+  }
+  .text-gray{
+    color: $gray-text-2;
+  }
+
+  .p-130 {
+    padding-left: 130px;
+  }
+  .accept {
+    color: $green;
+  }
+  .reject {
+    color : $red
+  }
+}

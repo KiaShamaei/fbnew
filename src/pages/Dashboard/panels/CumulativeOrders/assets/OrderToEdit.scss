@@ -1,0 +1,38 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.order-to-edit-dialog {
+    .dialog {
+        width: 700px;
+        .dialog-body {
+            padding: 8px 16px;
+        }
+        .price-field {
+            width: 250px;
+        }
+
+        .num-volume {
+            font-size: 13px;
+            line-height: 34px;
+        }
+
+        .volume-num1-num2 {
+            color: $blue;
+        }
+
+        .sell-num1-num2 {
+            color: $red;
+        }
+    }
+}
+
+.buy-num1-num2 {
+    color: $green;
+}
+
+.volume-num1-num2 {
+    color: $blue;
+}
+
+.sell-num1-num2 {
+    color: $red;
+}

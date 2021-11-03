@@ -1,0 +1,38 @@
+@import "../../../../assets/scss/utils/colors";
+.header-report {
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.main-report {
+  .authenticate-alert {
+    margin: 0;
+    height: 93vh;
+  }
+  background-color: white;
+  .bg-green {
+    background-color: #e5fcde;
+    width: 30%;
+  }
+  .bg-ultra-light-purple {
+    background-color: #f5f1f8;
+    width: 31%;
+  }
+  .bg-ultra-light-pink {
+    background-color: #ffeffa;
+    width: 37%;
+  }
+  .chart-border-radius {
+    border-radius: 10px;
+  }
+  .white-space-no-wrap {
+    white-space: nowrap;
+  }
+  .top-charts {
+    height: 150px;
+  }
+}
+.text-white {
+  color: white;
+}

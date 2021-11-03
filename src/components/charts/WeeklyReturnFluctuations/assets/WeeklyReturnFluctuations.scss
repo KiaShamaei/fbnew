@@ -1,0 +1,51 @@
+.weekly-return-fluctuations {
+    @mixin filter-item {
+        display: flex;
+        margin: 0 8px;
+        label {
+            margin: auto;
+            font-size: 14px;
+        }
+        .btn-switch {
+            &.active {
+                .circle {
+                    left: 68%;
+                }        
+            }
+        }
+        .circle {
+            left: 9px;
+            height: 11px;
+            width: 11px;
+            top: 7.3px;
+            background-color: white !important;
+            
+        }
+    }
+    .minimum {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: #09AAD3;
+            }
+        }
+    }
+    .dispute {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: black;
+            }
+        }
+    }
+    .maximum {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: #906FDE;
+                
+                
+            }
+        }
+    }
+}

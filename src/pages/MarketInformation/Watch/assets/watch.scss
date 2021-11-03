@@ -1,0 +1,21 @@
+@import '../../../../assets/scss/utils/colors';
+
+.watch {
+    height: 100% ;
+    background-color: white;
+    .span-gray {
+        color: $gray-text;
+    }
+    .paginator  {
+        padding-bottom:87px;
+    }
+}
+.watch-header-style {
+    height: 80px  ;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: $gray;
+  }
+  .watch-table {
+      display: flex;
+  }

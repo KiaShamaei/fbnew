@@ -1,0 +1,77 @@
+import { ISymbol } from "types/ISymbol";
+import { SYMBOL_DETAIL_DATA_MAP, BID_ASK_MAP } from "./dataMap";
+
+export function bidAskParser(data: any[][]) {
+    return data.map(dataItem => ({
+        askNumber: dataItem[BID_ASK_MAP.askNumber],
+        askPrice: dataItem[BID_ASK_MAP.askPrice],
+        askQuantity: dataItem[BID_ASK_MAP.askQuantity],
+        bidNumber: dataItem[BID_ASK_MAP.bidNumber],
+        bidPrice: dataItem[BID_ASK_MAP.bidPrice],
+        bidQuantity: dataItem[BID_ASK_MAP.bidQuantity],
+        rowPlace: dataItem[BID_ASK_MAP.rowPlace]
+    }))
+}
+
+export function symbolDetailParser(dataItem: any[]): ISymbol {
+    return {
+        isin: dataItem[SYMBOL_DETAIL_DATA_MAP.Isin],
+        instrumentName: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentName],
+        instrumentTitle: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentTitle],
+        instrumentCode: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentCode],
+        instrumentStateCode: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentStateCode],
+        instrumentStateTitle: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentStateTitle],
+        minimumOrderQuantity: dataItem[SYMBOL_DETAIL_DATA_MAP.MinimumOrderQuantity],
+        maximumOrderQuantity: dataItem[SYMBOL_DETAIL_DATA_MAP.MaximumOrderQuantity],
+        upperPriceThreshold: dataItem[SYMBOL_DETAIL_DATA_MAP.UpperPriceThreshold],
+        lowerPriceThreshold: dataItem[SYMBOL_DETAIL_DATA_MAP.LowerPriceThreshold],
+        closingPrice: dataItem[SYMBOL_DETAIL_DATA_MAP.ClosingPrice],
+        closingPricePercent: dataItem[SYMBOL_DETAIL_DATA_MAP.ClosingPricePercent],
+        lastPrice: dataItem[SYMBOL_DETAIL_DATA_MAP.LastPrice],
+        lastPricePercent: dataItem[SYMBOL_DETAIL_DATA_MAP.LastPricePercent],
+        yesterdayPrice: dataItem[SYMBOL_DETAIL_DATA_MAP.YesterdayPrice],
+        yearHighestTradePrice: dataItem[SYMBOL_DETAIL_DATA_MAP.YearHighestTradePrice],
+        yearLowestTradePrice: dataItem[SYMBOL_DETAIL_DATA_MAP.YearLowestTradePrice],
+        upperTradePrice: dataItem[SYMBOL_DETAIL_DATA_MAP.UpperTradePrice],
+        lowestTradePrice: dataItem[SYMBOL_DETAIL_DATA_MAP.LowestTradePrice],
+        theoryOpeningPrice: dataItem[SYMBOL_DETAIL_DATA_MAP.TheoryOpeningPrice],
+        lastTradeDate: dataItem[SYMBOL_DETAIL_DATA_MAP.LastTradeDate],
+        bidAsk: bidAskParser(dataItem[SYMBOL_DETAIL_DATA_MAP.BidAsk]),
+        buyFirmCount: dataItem[SYMBOL_DETAIL_DATA_MAP.BuyFirmCount],
+        buyFirmVolume: dataItem[SYMBOL_DETAIL_DATA_MAP.BuyFirmVolume],
+        buyFirmVolumePercentage: dataItem[SYMBOL_DETAIL_DATA_MAP.BuyFirmVolumePercentage],
+        buyIndividualCount: dataItem[SYMBOL_DETAIL_DATA_MAP.BuyIndividualCount],
+        buyIndividualVolume: dataItem[SYMBOL_DETAIL_DATA_MAP.BuyIndividualVolume],
+        buyIndividualVolumePercentage: dataItem[SYMBOL_DETAIL_DATA_MAP.BuyIndividualVolumePercentage],
+        selFirmCount: dataItem[SYMBOL_DETAIL_DATA_MAP.SelFirmCount],
+        selFirmVolume: dataItem[SYMBOL_DETAIL_DATA_MAP.SelFirmVolume],
+        selFirmVolumePercentage: dataItem[SYMBOL_DETAIL_DATA_MAP.SelFirmVolumePercentage],
+        selIndividualCount: dataItem[SYMBOL_DETAIL_DATA_MAP.SelIndividualCount],
+        selIndividualVolume: dataItem[SYMBOL_DETAIL_DATA_MAP.SelIndividualVolume],
+        selIndividualVolumePercentage: dataItem[SYMBOL_DETAIL_DATA_MAP.SelIndividualVolumePercentage],
+        totalNumberOfSharesTraded: dataItem[SYMBOL_DETAIL_DATA_MAP.TotalNumberOfSharesTraded],
+        totalNumberOfTrades: dataItem[SYMBOL_DETAIL_DATA_MAP.TotalNumberOfTrades],
+        totalTradeValue: dataItem[SYMBOL_DETAIL_DATA_MAP.TotalTradeValue],
+        baseVolume: dataItem[SYMBOL_DETAIL_DATA_MAP.BaseVolume],
+        sectorCode: dataItem[SYMBOL_DETAIL_DATA_MAP.SectorCode],
+        exchangeName: dataItem[SYMBOL_DETAIL_DATA_MAP.ExchangeName],
+        exchangeCode: dataItem[SYMBOL_DETAIL_DATA_MAP.ExchangeCode],
+        instrumentTypeCode: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentTypeCode],
+        instrumentTypeTitle: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentTypeTitle],
+        tsetmcId: dataItem[SYMBOL_DETAIL_DATA_MAP.TsetmcId],
+        firstTradedPrice: dataItem[SYMBOL_DETAIL_DATA_MAP.FirstTradedPrice],
+        liquidity: dataItem[SYMBOL_DETAIL_DATA_MAP.Liquidity],
+        indexImpact: dataItem[SYMBOL_DETAIL_DATA_MAP.IndexImpact],
+        lastMonthTurnover: dataItem[SYMBOL_DETAIL_DATA_MAP.LastMonthTurnover],
+        lastThreeMonthesTurnover: dataItem[SYMBOL_DETAIL_DATA_MAP.LastThreeMonthesTurnover],
+        PE: dataItem[SYMBOL_DETAIL_DATA_MAP.PE],
+        PEGroup: dataItem[SYMBOL_DETAIL_DATA_MAP.PEGroup],
+        EPS: dataItem[SYMBOL_DETAIL_DATA_MAP.EPS],
+        closingPriceVariation: dataItem[SYMBOL_DETAIL_DATA_MAP.ClosingPriceVariation],
+        lastPriceVariation: dataItem[SYMBOL_DETAIL_DATA_MAP.LastPriceVariation],
+        InstrumentMarketValue: dataItem[SYMBOL_DETAIL_DATA_MAP.InstrumentMarketValue],
+        TomorrowLowerThreshold: dataItem[SYMBOL_DETAIL_DATA_MAP.TomorrowLowerThreshold],
+        TomorrowUpperThreshold: dataItem[SYMBOL_DETAIL_DATA_MAP.TomorrowUpperThreshold],
+        PriceTick: dataItem[SYMBOL_DETAIL_DATA_MAP.PriceTick]
+    }
+}

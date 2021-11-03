@@ -1,0 +1,23 @@
+.news-header {
+    i {
+        margin-top: 3px !important;
+        display: block;
+    }
+    .h-90px {
+        height: 95px;
+    }
+    .dropdown {
+        box-shadow: 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12), 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12);
+        width: 150px;
+        
+        top: 124% !important;
+        z-index: 4;
+        .radio-container {
+            padding: 2px 4px;
+            margin: 3px 0;
+            .radio-title {
+                font-weight: 400;
+            }
+        }
+    }
+}

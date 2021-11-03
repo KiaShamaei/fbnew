@@ -1,0 +1,94 @@
+@import "../.../../../../../../assets/scss/utils/colors";
+
+.symbol-item {
+    padding: 8px;
+    border-bottom: 1px solid $ultra-ligh-gray;
+
+    .title {
+        font-size: 15px;
+        &.not-active {
+            position: relative;
+            &::after {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                border-bottom: 0.1px solid $black;
+                transform: translateY(-50%);
+                content: "";
+                width: 100%;
+            }
+        }
+    }
+    &:hover {
+        background-color: $buy-and-sell-form-gray;
+    }
+    &.is-active {
+        background-color: rgba($color: #e6f5ff, $alpha: 0.8);
+    }
+ 
+    .online-icon-eye {
+        cursor: pointer;
+        color: $blue;
+    }
+    .circle {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        &.green {
+            background-color: $green;
+        }
+        &.red {
+            background-color: $red;
+        }
+        &.orange {
+            background-color: $yellow;
+        }
+    }
+
+    .symbol-company-name {
+        font-size: 13px;
+        color: $gray-header;
+    }
+
+    .price {
+        direction: ltr;
+    }
+
+    .add-to-watch {
+        color: $blue;
+        font-size: 13px;
+    }
+
+    .online-icon-more-detail {
+        color: $gray-icon;
+    }
+
+    .price {
+        direction: ltr;
+        text-align: left;
+
+        .value {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .percent {
+            direction: ltr;
+        }
+    }
+
+    .buttons {
+        flex-direction: row-reverse;
+        padding: 8px 0;
+        .button {
+            margin: 0 3px;
+            padding: 0px 12px;
+        }
+    }
+
+    .add-to-watch-container {
+        &.red {
+            margin-top: 3px !important;
+        }
+    }
+}

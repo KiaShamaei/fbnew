@@ -1,0 +1,63 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.symbol-list-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    .selected-symbol-group {
+        .symbol-name {
+            font-size: 13px;
+        }
+        .symbol-name .not-active{
+            &::after{
+                display: none;
+            }
+        }
+    }
+
+    
+   
+    .symbol-list-group {
+        background-color: $ultra-ligh-gray;
+        padding: 7px;
+        
+        h2 {
+            font-weight: 400;
+            font-size: 15px;
+            color: $gray-text-2;
+            overflow: hidden;
+            width: 65px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .online-icon-back {
+            margin-left: 4px;
+            color:#0C91E9;
+        }
+        i {
+            color: $gray-text-2;
+            font-size: 19px;
+        }
+        .sort {
+            
+            margin-left: 8px;
+            .sort-radio {
+                margin: 0 6px;
+                .radio-core {
+                    margin: auto 4px;
+                }
+                .radio-title {
+                    font-size: 15px;
+                    color: $black;
+                    font-weight: 400;
+                    display: block;
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.watch-header{
+    width: 100%;
+    box-shadow: 0 6px 14px 0 rgba(0,0,0,0.10);
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0C91E9;
+    text-align: left;
+    .shadow {
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    }
+    .text-light {
+        color: white;
+    }
+    .button{
+        margin: 0 5px;
+        color: #0C91E9;
+        height: 30px;
+        font-weight: 600;
+        .icon-style { 
+            font-size: 16px;
+        }
+        .blue-icon {
+            color : #0C91E9;
+        }
+        .white {
+            color: white;
+        }
+    }
+    .button.navy-blue{
+        color: #ffffff;
+    }
+    .dropdown-menu-container{
+        display: inline-block;
+        
+    }
+    .dropdown{
+        width: 200px !important;
+        margin-top: 20px;
+    }
+    .item{
+        margin: 10px 0;
+        padding-right: 5px;
+        align-items: center;
+        cursor: pointer;
+        .checkbox{
+            margin: 0 0 0 5px;
+    
+            &:hover{
+                background-color: #3193F5 !important;
+            }
+        }
+        .checkbox.checked{
+            background-color: #3193F5 !important;
+            border: none !important;
+        }
+    }
+    .checkbox.checked{
+        background-color: #3193F5 !important;
+        border: none !important;
+    }
+    
+}   
+

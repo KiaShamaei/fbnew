@@ -1,0 +1,17 @@
+@import '../../../../../../assets/scss/utils/colors';
+
+
+.tree-map-container { 
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  height: 500px;
+  .tree-map-header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding : 0px 20px;
+    border-radius: 5px 5px 0 0;
+    border:1px solid transparent;
+    background-color: $gray;
+  }
+}

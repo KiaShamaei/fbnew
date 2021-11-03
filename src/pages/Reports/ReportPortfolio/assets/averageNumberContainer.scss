@@ -1,0 +1,52 @@
+@import '../../../../assets/scss/utils/colors';
+@mixin filter-item {
+    display: flex;
+    margin: 0 8px;
+    label {
+        margin: auto;
+        font-size: 14px;
+    }
+    .btn-switch {
+        &.active {
+            .circle {
+                left: 68%;
+            }        
+        }
+    }
+    .circle {
+        left: 9px;
+        height: 11px;
+        width: 11px;
+        top: 7.3px;
+        background-color: white !important;
+        
+    }
+}
+.main-container {
+    width: 62%;
+    border: 1px solid $table-border-gray;
+    border-radius: 10px;
+    .header-container {
+        display: flex;
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        border:1px solid transparent;
+        background-color: rgb(210, 228, 252);
+    }
+    .trade-counts {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: $blue;
+            }
+        }
+    }
+    .instrument-counts {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: $yellow;
+            }
+        }
+    }
+}

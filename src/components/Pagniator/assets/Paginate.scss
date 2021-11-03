@@ -1,0 +1,47 @@
+@import '../../../assets/scss/utils/colors';
+
+.pagniate-container {
+    .refresh-btn {
+        font-size: 28px;
+        margin: auto;
+        margin-right: 8px;
+        color: $table-border-gray;
+
+    }
+    .pagniate {
+        display: flex;
+        direction: ltr;
+        li {
+            margin: 0 4px;
+            a {
+                $size: 35px;
+                line-height: $size;
+                text-align: center;
+                border-radius: 50%;
+                height: $size;
+                width: $size;
+                display: block;
+                border: 1px solid $gray;
+                cursor: pointer;
+            }
+            
+            &.selected {
+                a {
+                    background-color: $blue;
+                    border: 1px solid $blue;
+                    color: white;
+                }       
+            }
+        }
+        .arrow {
+            a {
+                background-color: $table-border-gray;
+                i {
+                    color: white;
+                    font-size: 10px;
+                }
+                
+            }
+        }
+    }
+}

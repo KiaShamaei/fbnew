@@ -1,0 +1,529 @@
+@import "../../../assets/scss/utils/colors";
+
+.login-sidebar {
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  $default-zindex: 20;
+  z-index: $default-zindex;
+  width: 100%;
+  height: 100%;
+  animation: fade-in;
+  animation-timing-function: ease;
+  animation-duration: 0.4s;
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #09306e inset !important;
+    -webkit-text-fill-color: white !important;
+  }
+  .confirm {
+    margin: 8px 0;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+    .checkbox {
+      height: 14px;
+      width: 14px;
+      margin: auto 0;
+      margin-left: 4px;
+      border-radius: 3px;
+      &:not(.checked) {
+        i {
+          display: none;
+        }
+        background-color: white;
+      }
+    }
+  }
+  .login-sidebar-form {
+    animation-name: slide-in;
+    animation-timing-function: ease;
+    animation-duration: 0.4s;
+    .login-error {
+      margin-top: 4px;
+      color: $red;
+      font-size: 14px;
+      display: flex;
+      i {
+        margin-left: 6px;
+        color: $red;
+      }
+    }
+    .title-close {
+      margin-top: 21px;
+      margin-bottom: 32px;
+
+      .title {
+        color: white;
+        margin: auto 0;
+      }
+
+      .close,
+      .back {
+        margin: auto 0;
+        display: block;
+        font-size: 20px;
+        color: white;
+        transform: translateX(-22px);
+      }
+    }
+
+    .logo {
+      margin: auto;
+    }
+
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 550px;
+    padding: 0 64px;
+    z-index: $default-zindex + 1;
+    background-color: #03265e;
+  }
+
+  .forgott-password-description {
+    margin: 10px 0;
+    font-size: 13.5px;
+    line-height: 24px;
+  }
+
+  .button {
+    margin-top: 20px;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  .forgot-password-forms {
+    width: 100%;
+    overflow: hidden;
+
+    .forms-container {
+      transition: 0.3s ease;
+    }
+
+    .forms-container {
+      width: 400%;
+
+      .form {
+        transition: 0.3s ease;
+        opacity: 1;
+        width: 100%;
+        padding: 0 4px;
+      }
+    }
+  }
+}
+
+.login-form {
+  * {
+    color: white;
+  }
+
+  .username,
+  .password {
+    label {
+      display: block;
+    }
+
+    .icon {
+      i {
+        font-size: 13px;
+      }
+    }
+
+    input {
+      font-size: 13px;
+    }
+    input:-webkit-autofill {
+      background-color: transparent;
+    }
+  }
+
+  .input-core {
+    * {
+      background-color: $login-field-background;
+    }
+
+    border: none;
+    background-color: $login-field-background;
+    padding: 6px 4px;
+  }
+  .items {
+    &.is-close {
+      display: none;
+    }
+    &.is-loading {
+      height: 200px;
+      overflow: hidden;
+    }
+    left: 0;
+    width: 100%;
+    border: none;
+    top: 98%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    position: absolute;
+    background-color: $login-field-background;
+    z-index: 4;
+    max-height: 200px;
+    list-style: none;
+    .item {
+      padding: 10px;
+      font-size: 14px;
+      background-color: $login-field-background;
+      cursor: pointer;
+      white-space: nowrap;
+      .checkbox {
+        margin: auto 0;
+        margin-left: 4px;
+      }
+      .title {
+        margin: auto 0;
+      }
+      &.group {
+        font-size: 13px;
+        padding: 3px 8px;
+        color: #757575;
+        cursor: default;
+      }
+      &.hovered {
+        background-color: $login-field-background;
+      }
+      &.selected {
+        background-color: $blue;
+      }
+    }
+  }
+
+  .capcha {
+    .capcha-image-container {
+      width: 50%;
+      margin-top: 26px;
+      border-radius: 4px;
+      margin-right: 8px;
+      height: 42.5px;
+      padding: 3px;
+      display: flex;
+      margin-right: 8px;
+      background-color: #09306E;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+
+      i {
+        margin: auto;
+        margin-right: 8px;
+        padding: 8px - 3px;
+      }
+    }
+  }
+
+  .login-btn {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .alerts {
+    margin-top: 8px;
+    $padding: 16px;
+    padding-right: $padding;
+    width: 100%;
+
+    li {
+      font-weight: 400;
+      position: relative;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 27px;
+
+      &::after {
+        position: absolute;
+        top: 9px;
+        border-radius: 50%;
+        right: -($padding + 3px);
+        content: "";
+        background-color: $blue;
+        $size: 10px;
+        height: $size;
+        width: $size;
+      }
+    }
+  }
+
+  .wait-until-send-sms {
+    margin-top: 8px;
+    display: block;
+    font-size: 13px;
+  }
+}
+
+.forgot-password {
+  color: $blue;
+}
+
+@media only screen and (max-width: 1441px) {
+  .login-sidebar {
+    font-size: 13px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    $default-zindex: 20;
+    z-index: $default-zindex;
+    width: 100%;
+    height: 100%;
+    animation: fade-in;
+    animation-timing-function: ease;
+    animation-duration: 0.4s;
+    .confirm {
+      margin: 8px 0;
+      font-size: 12px;
+      cursor: pointer;
+      user-select: none;
+      .checkbox {
+        height: 14px;
+        width: 14px;
+        margin: auto 0;
+        margin-left: 4px;
+        border-radius: 3px;
+        &:not(.checked) {
+          i {
+            display: none;
+          }
+          background-color: white;
+        }
+      }
+    }
+    .login-sidebar-form {
+      animation-name: slide-in;
+      animation-timing-function: ease;
+      animation-duration: 0.4s;
+      .login-error {
+        margin-top: 4px;
+        color: $red;
+        display: flex;
+        i {
+          margin-left: 6px;
+          color: $red;
+        }
+      }
+      .title-close {
+        margin-top: 21px;
+        margin-bottom: 32px;
+
+        .title {
+          color: white;
+          margin: auto 0;
+        }
+
+        .close,
+        .back {
+          margin: auto 0;
+          display: block;
+          font-size: 20px;
+          color: white;
+          transform: translateX(-22px);
+        }
+      }
+
+      .logo {
+        margin: auto;
+      }
+
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 500px;
+      padding: 0 64px;
+      z-index: $default-zindex + 1;
+      background-color: #03265e;
+    }
+
+    .forgott-password-description {
+      margin: 10px 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .forgot-password-forms {
+      width: 100%;
+      overflow: hidden;
+
+      .forms-container {
+        transition: 0.3s ease;
+      }
+
+      .forms-container {
+        width: 400%;
+
+        .form {
+          transition: 0.3s ease;
+          opacity: 1;
+          width: 100%;
+          padding: 0 4px;
+        }
+      }
+    }
+  }
+  .login-form {
+    * {
+      color: white;
+      label {
+        font-size: 12px;
+      }
+    }
+
+    .username,
+    .password {
+      label {
+        display: block;
+      }
+
+      .icon {
+        i {
+          font-size: 13px;
+        }
+      }
+
+      input {
+        font-size: 13px;
+      }
+      input:-webkit-autofill {
+        background-color: transparent;
+      }
+    }
+
+    .input-core {
+      * {
+        background-color: $login-field-background;
+      }
+
+      border: none;
+      padding: 6px 4px;
+    }
+    .items {
+      &.is-close {
+        display: none;
+      }
+      &.is-loading {
+        height: 200px;
+        overflow: hidden;
+      }
+      left: 0;
+      width: 100%;
+      border: none;
+      top: 98%;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      position: absolute;
+
+      z-index: 4;
+      max-height: 200px;
+      list-style: none;
+      .item {
+        padding: 10px;
+        font-size: 14px;
+        background-color: $login-field-background;
+        cursor: pointer;
+        white-space: nowrap;
+        .checkbox {
+          margin: auto 0;
+          margin-left: 4px;
+        }
+        .title {
+          margin: auto 0;
+        }
+        &.group {
+          font-size: 13px;
+          padding: 3px 8px;
+          color: #757575;
+          cursor: default;
+        }
+        &.hovered {
+          background-color: $login-field-background;
+        }
+        &.selected {
+          background-color: $blue;
+        }
+      }
+    }
+
+    .capcha {
+      .capcha-image-container {
+        width: 50%;
+        margin-top: 26px;
+        border-radius: 4px;
+        margin-right: 8px;
+        height: 42.5px;
+        padding: 3px;
+        display: flex;
+        margin-right: 8px;
+        background-color: #09306E;
+
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+
+        i {
+          margin: auto;
+          margin-right: 8px;
+          padding: 8px - 3px;
+        }
+      }
+    }
+
+    .login-btn {
+      font-size: 16px;
+      padding: 10px 0;
+    }
+
+    .alerts {
+      margin-top: 8px;
+      $padding: 16px;
+      padding-right: $padding;
+      width: 100%;
+
+      li {
+        font-weight: 400;
+        position: relative;
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 27px;
+
+        &::after {
+          position: absolute;
+          top: 9px;
+          border-radius: 50%;
+          right: -($padding + 3px);
+          content: "";
+          background-color: $blue;
+          $size: 10px;
+          height: $size;
+          width: $size;
+        }
+      }
+    }
+
+    .wait-until-send-sms {
+      margin-top: 8px;
+      display: block;
+      font-size: 13px;
+    }
+  }
+
+  .wait-until-send-sms {
+    margin-top: 8px;
+    display: block;
+    font-size: 12px;
+  }
+}

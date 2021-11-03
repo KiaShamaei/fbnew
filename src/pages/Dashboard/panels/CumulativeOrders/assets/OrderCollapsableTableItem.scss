@@ -1,0 +1,63 @@
+@import "../../../../../assets/scss/utils/colors";
+
+.order-collapsable-table-item-icons {
+    padding: 8px;
+    display: flex;
+    border-bottom: 1px solid $gray;
+    button {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+    .icon {
+        background-color: #a7a0a0;
+        $size: 16px;
+        height: $size;
+        width: $size;
+        position: relative;
+        margin: auto 0;
+        cursor: pointer;
+        margin-left: 8px;
+        border-radius: 3px;
+        &.plus {
+            &::before {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                border-radius: 2px;
+                transform: translate(-50%, -50%);
+                border-left: 2px solid white;
+                height: 80%;
+                content: "";
+            }
+        }
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            border-radius: 2px;
+            width: 80%;
+            border-bottom: 2px solid white;
+        }
+    }
+}
+.order-collapsable-table-rows {
+    overflow: hidden;
+    .order-collapsable-table-item-row {
+        height: 35px;
+        * {
+            line-height: 35px;
+        }
+        @mixin calculate-color($color) {
+            background-color: rgba($color, 0.1);
+        }
+        &.red {
+            @include calculate-color($red);
+        }
+        &.green {
+            @include calculate-color($green);
+        }
+        border-bottom: 1px solid $gray;
+    }
+}

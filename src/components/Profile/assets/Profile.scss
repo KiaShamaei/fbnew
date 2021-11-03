@@ -1,0 +1,47 @@
+@import '../../../assets/scss/utils/colors';
+
+.profile-dailog {
+    .dialog {
+        width: 330px;
+        .dialog-header {
+            .title {
+                text-align: right;
+            }
+            .online-icon-close {
+                font-size: 20px;
+            }
+        }
+        .dialog-body {
+            text-align: center;
+            padding: 16px 28px;
+            .fullname {
+                text-align: center;
+            }
+        }
+        img {
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        @mixin subscriptions($height) {
+            line-height: $height;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        .sepcification-item {
+            display: flex;
+            $height: 43px;
+            height: $height;
+            @include subscriptions($height);
+            &:not(:last-child) {
+                border-bottom: 1px solid #e6e6e7;
+                @include subscriptions($height);
+            }
+            .title {
+                font-weight: 300;
+                flex-grow: 1;
+            }
+        }
+    }
+}

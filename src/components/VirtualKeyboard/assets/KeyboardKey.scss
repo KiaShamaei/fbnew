@@ -1,0 +1,58 @@
+@import '../../../assets/scss/utils/colors';
+
+.keyboard-key-container  {
+    padding: 2px;
+
+    .keyboard-key {
+        $size: 30px;
+        user-select: none;
+        height: $size;
+        width: $size;
+        line-height: $size;
+        text-align: center;
+        border: 1px solid rgb(91, 96, 141);
+        color: white;
+        cursor: pointer;
+        &.caps-lock-on:not(.backspace) {
+            text-transform: uppercase;
+        }
+        &:hover {
+            background-color: rgb(91, 96, 141);
+        }
+        span {
+            color: white;
+            i {
+                color: white;
+            }
+        }
+        &.backspace {
+            width: 80px;
+            font-size: 13px;
+            i {
+                color: white;
+            }
+        }
+        &.enter {
+            width: 45px;
+        }
+    }
+}
+
+.caps-lock {
+    .keyboard-key {
+        width: 100px;
+        display: flex;
+        .switch {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            background-color: black;
+            &.is-on {
+                background-color: $green;
+            }
+        }
+    }
+}
+

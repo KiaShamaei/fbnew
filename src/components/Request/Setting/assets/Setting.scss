@@ -1,0 +1,97 @@
+@import "../../../../assets/scss/utils/colors";
+$sizes: (
+  sm: 14px,
+  md: 16px,
+  lg: 24px,
+);
+
+.setting {
+  
+  .btn {
+    border-radius: 50px;
+  }
+  .dialog-body {
+    .item {
+      margin: 30px 0 !important;
+      padding-right: 30px;
+      display: flex;
+      position: relative;
+    
+      .btns{
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  .radio-container .radio-title {
+    width: 50px;
+    max-width: 100%;
+    font-weight: 400;
+  }
+  .radio-core {
+    $size: 8px;
+    height: $size + 10px;
+    width: $size + 10px;
+    border-radius: 50%;
+    padding: 3px;
+    @mixin border($color) {
+      border: 1px solid #dcd7d7 !important;
+    }
+    @include border($gray-text);
+    &.selected {
+      @include border($green);
+      .circle {
+        background-color: #00c288 !important;
+      }
+    }
+    .circle {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .btn-check {
+    width: 100%;
+    position: relative;
+    .checkbox-container {
+      max-width: 100%;
+      width: 100%;
+      .checkbox-title {
+        order: -1;
+      }
+      .checkbox {
+        position: absolute;
+        right: 38%;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $gray;
+        &:hover {
+          background-color: $green !important;
+        }
+        &.checked {
+          background-color: $green !important;
+          border: 1px solid $green !important;
+          .online-icon-tick {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .dialog {
+    width: 900px;
+    .dialog-header .title {
+      text-align: right;
+    }
+  }
+  .regular-table {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .btn-switch {
+    margin-left: 150px;
+  }
+}

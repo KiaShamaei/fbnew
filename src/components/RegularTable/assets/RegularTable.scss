@@ -1,0 +1,27 @@
+@import '../../../assets/scss/utils/colors';
+
+.regular-table {
+    border-collapse: collapse;
+    width: 100%;
+    th, td {
+        text-align: center;
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    td {
+        border-bottom: 1px solid $ultra-ligh-gray;
+    }
+    th {
+        background-color: $table-header-gray;
+        font-weight: 400;
+        $border-radius: 5px;
+        &:last-child {
+            border-bottom-left-radius: $border-radius;
+            border-top-left-radius: $border-radius;
+        }
+        &:first-child {
+            border-bottom-right-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+        }
+    }
+}

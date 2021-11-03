@@ -1,0 +1,33 @@
+@import '../../../assets/scss/utils/colors';
+@import '../../../assets/scss/utils/sizes';
+
+.sidebar {
+    .sidebar-item {
+        .__react_component_tooltip.show {
+           padding: 5px;
+          }
+
+        &.is-active {
+            background-color: #02548a;
+        }
+        margin-bottom: 13px;
+        lord-icon {
+            height: 42px;
+            width: $sidebar-width;
+            margin-left: 0px;
+            position: relative;
+            z-index: 2;
+            display: block;
+
+            
+        }
+        cursor: pointer;
+    }
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: $sidebar-width;
+    height: 100%;
+    z-index: 2;
+    background-color: $dark-blue;
+}

@@ -1,0 +1,97 @@
+@import "../../../assets/scss/utils/colors";
+@import "../../../assets/scss/utils/shadow";
+
+.portfolio-table-item-container {
+  padding: 0 13px;
+  $row-margin-top: 8px;
+  font-size: 13px;
+  &.is-active {
+    .portfolio-table-item {
+      background-color: #e6f5ff;
+      border: 1px solid #68b7eb;
+    }
+  }
+  .portfolio-table-item {
+    border: 1px solid rgba($dropdown-border, $alpha: 0.44);
+    padding: 9px 0;
+    border-radius: 4px;
+    margin: 4px 0;
+    font-size: 14px;
+    display: flex;
+    .symbol {
+      margin: auto 0;
+      display: flex;
+      .circle {
+        height: 8px;
+        width: 8px;
+        display: block;
+        margin: auto 6px;
+        border-radius: 50%;
+        @each $color-name, $color in $color-obj {
+          &.#{$color-name} {
+            background-color: $color;
+          }
+        }
+      }
+      .title {
+        margin-right: 2px;
+        white-space: nowrap;
+      }
+    }
+    .instantaneous-value {
+      .instantaneous-value-container {
+        display: table;
+        margin: auto;
+        .instantaneous-value-text {
+          font-weight: 400 ;
+          font-size: 13px;
+          display: block;
+          div { 
+            color: #1E1E1E;
+          }
+        }
+        .number {
+          font-size: 13px;
+          display: block;
+          color: #828282;
+          margin-top: $row-margin-top;
+        }
+      }
+    }
+
+    .final {
+      margin-top: $row-margin-top;
+    }
+
+    .online-icon-more-detail {
+      color: $gray-icon;
+      font-size: 18px;
+      padding-left: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .portfolio-table-item {
+   
+    .symbol {
+      margin: auto 0;
+      display: flex;
+      .circle {
+        height: 8px;
+        width: 8px;
+        display: block;
+        margin: auto 6px;
+        border-radius: 50%;
+        @each $color-name, $color in $color-obj {
+          &.#{$color-name} {
+            background-color: $color;
+          }
+        }
+      }
+      .title {
+        max-width: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../.../../../../../../assets/scss/utils/colors";
+
+.symbol-search {
+    background-color: white;
+   
+    input {
+        border: 0;
+        outline: none;
+        padding-right: 6px;
+        color: $gray-text-2;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .search-icon {
+        cursor: pointer;
+        margin: auto 6px;
+        border: none;
+        background-color: transparent;
+    }
+}

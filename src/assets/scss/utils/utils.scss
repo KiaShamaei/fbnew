@@ -1,0 +1,26 @@
+@import 'display';
+@import 'flex';
+@import 'direction';
+@import 'cursor';
+@import 'margin';
+@import 'padding';
+@import 'opacity';
+@import 'position';
+@import 'shadow';
+@import 'colors';
+@import 'zindex';
+@import 'keyframes';
+@import 'visibility';
+
+
+@each $name, $color in $color-obj {
+    .color-#{$name} {
+        color: $color;
+    }
+}
+
+@each $name, $color in $color-obj {
+    .bg-color-#{$name} {
+        background-color: $color;
+    }
+}

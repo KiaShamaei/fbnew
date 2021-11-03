@@ -1,0 +1,51 @@
+@import "./colors";
+
+.current-order-edit {
+    padding: 8px;
+    background-color: $current-order-item-bg;
+    .input-core {
+        background-color: $current-order-header;
+        border: 0;
+        input {
+            background-color: $current-order-header;
+            
+        }
+        .icon {
+            border-right: 1.5px solid $current-order-item-bg;
+        }
+    }
+    .list-container {
+        background-color: $current-order-item-bg;
+        ul {
+            background-color: $current-order-item-bg !important;
+            .selected {
+                background-color: $current-order-header !important;
+            }
+            .hovered {
+                background-color: $current-order-header !important;
+            }
+        }
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+
+    .display-size {
+        input {
+            &::placeholder {
+                color: white;
+            }
+            direction: ltr;
+            text-align: left;
+        }
+    }
+
+    .costs {
+        .title {
+            color: $current-order-text;
+        }
+    }
+}

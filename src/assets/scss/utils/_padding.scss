@@ -1,0 +1,48 @@
+$sizes: (
+    1: 4px,
+    2: 8px,
+    4: 16px,
+    5 : 20px,
+    6 : 25px,
+    8: 32px,
+);
+
+@each $size, $size-in-pixel in $sizes {
+    .pr-#{$size} {
+        padding-right: $size-in-pixel !important;
+    }
+    .pl-#{$size} {
+        padding-left: $size-in-pixel !important;
+    }
+    .pt-#{$size} {
+        padding-top: $size-in-pixel !important;
+    }
+    .pb-#{$size} {
+        padding-bottom: $size-in-pixel !important;
+    }
+    .p-#{$size} {
+        padding: $size-in-pixel !important;
+    }
+    .px-#{$size} {
+        padding-left: $size-in-pixel !important;
+        padding-right: $size-in-pixel !important;
+    }
+    .py-#{$size} {
+        padding-top: $size-in-pixel !important;
+        padding-bottom: $size-in-pixel !important;
+    }
+    @media (min-width: 1583px) {
+        .pb-xl-#{size} {
+            margin-bottom: $size-in-pixel !important;
+        }
+        .pr-xl-#{$size} {
+            margin-right: $size-in-pixel !important;
+        }
+        .pl-xl-#{$size} {
+            margin-left: $size-in-pixel !important;
+        }
+        .pt-xl-#{$size} {
+            margin-top: $size-in-pixel !important;
+        }
+    }
+}

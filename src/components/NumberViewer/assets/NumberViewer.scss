@@ -1,0 +1,34 @@
+@import '../../../assets/scss/utils/colors';
+
+.number-viewer  {
+    &.isPositive {
+        color: $green;
+        * {
+            color: $green;
+        }
+    }
+    &.is-negative {
+        color: $green;
+        * {
+            color: $red;
+        }
+    }
+    &.zero{
+        color: $black !important;
+    }
+
+    .icon {
+        margin: auto;
+        margin-left: 4px;
+        font-size: 8px;
+        &.is-negative {
+            color: $red;
+            margin-top: 8px;
+        }
+        &.is-positive {
+            transform: rotate(180deg);
+            color: $green;
+            margin-top: 3px;
+        }
+    }
+}

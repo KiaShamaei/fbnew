@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.46" height="23.5" viewBox="0 0 38.46 23.5">
+  <g id="keyboard_1_" data-name="keyboard (1)" transform="translate(-11 -106.3)">
+    <path id="Path_4592" data-name="Path 4592" d="M49.46,127.7V108.4a2.165,2.165,0,0,0-2.221-2.1H13.221A2.165,2.165,0,0,0,11,108.4V127.7a2.165,2.165,0,0,0,2.221,2.1H47.239A2.16,2.16,0,0,0,49.46,127.7Zm-36.537,0V108.4c0-.071.118-.173.3-.173H47.239c.188,0,.3.11.3.173V127.7c0,.071-.118.173-.3.173H13.221C13.041,127.877,12.923,127.775,12.923,127.7Z" transform="translate(0 0)" fill="#fff"/>
+    <circle id="Ellipse_385" data-name="Ellipse 385" cx="1.201" cy="1.201" r="1.201" transform="translate(16.73 111.755)" fill="#fff"/>
+    <circle id="Ellipse_386" data-name="Ellipse 386" cx="1.201" cy="1.201" r="1.201" transform="translate(21.651 111.755)" fill="#fff"/>
+    <circle id="Ellipse_387" data-name="Ellipse 387" cx="1.201" cy="1.201" r="1.201" transform="translate(26.564 111.755)" fill="#fff"/>
+    <circle id="Ellipse_388" data-name="Ellipse 388" cx="1.201" cy="1.201" r="1.201" transform="translate(31.486 111.755)" fill="#fff"/>
+    <circle id="Ellipse_389" data-name="Ellipse 389" cx="1.201" cy="1.201" r="1.201" transform="translate(36.407 111.755)" fill="#fff"/>
+    <circle id="Ellipse_390" data-name="Ellipse 390" cx="1.201" cy="1.201" r="1.201" transform="translate(41.328 111.755)" fill="#fff"/>
+    <circle id="Ellipse_391" data-name="Ellipse 391" cx="1.201" cy="1.201" r="1.201" transform="translate(19.194 116.849)" fill="#fff"/>
+    <circle id="Ellipse_392" data-name="Ellipse 392" cx="1.201" cy="1.201" r="1.201" transform="translate(24.108 116.849)" fill="#fff"/>
+    <circle id="Ellipse_393" data-name="Ellipse 393" cx="1.201" cy="1.201" r="1.201" transform="translate(29.029 116.849)" fill="#fff"/>
+    <circle id="Ellipse_394" data-name="Ellipse 394" cx="1.201" cy="1.201" r="1.201" transform="translate(33.943 116.849)" fill="#fff"/>
+    <path id="Path_4593" data-name="Path 4593" d="M367.2,240.7h0a1.2,1.2,0,0,0,0,2.4h0a1.2,1.2,0,1,0,0-2.4Z" transform="translate(-327.136 -123.851)" fill="#fff"/>
+    <path id="Path_4594" data-name="Path 4594" d="M152.523,308.7H135.365a.965.965,0,1,0,0,1.931h17.158a.965.965,0,1,0,0-1.931Z" transform="translate(-113.714 -186.514)" fill="#fff"/>
+  </g>
+</svg>

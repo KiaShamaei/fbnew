@@ -1,0 +1,11 @@
+$opacity-levels: (
+    0,
+    0.5,
+    1
+);
+
+@each $item in $opacity-levels {
+    .opacity-#{$item} {
+        opacity: #{$item};
+    }
+}

@@ -1,0 +1,72 @@
+$red: #ff526d;
+$red-dark: #b32f43;
+$green: #00c288;
+$green-dark: #005c40;
+$light-green :#CBF9C2;
+$ultra-light-green:#F0FFF0;
+$blue: #0C91E9;
+$light-blue : #74d7f2;
+$hover-blue : #0e68a5;
+$blue-dark: #04265F;
+$gray: #DDE0E2;
+$arrow-gray : #5B5857;
+$light-gray: #F0F3FA;
+$ultra-ligh-gray: #EBF1F5;
+$purple: #8A7EFE;
+$black: #3B3735;
+$gray-text: #b8b8b8;
+$gray-header: #989494;
+$dark-blue: #292f4f;
+$gray-icon: #b7b7b7;
+$gray-text-2: #828282;
+$menu-dropdown-border: #0ae4b6;
+$button-gray: #cfcfcf;
+$table-header-gray: #e8e8e8;
+$table-border-gray: #c8c9cc;
+$dropdown-border: #ccd2db;
+$yellow: #f2d664;
+$border-color: #E1D9D9;
+$darker-yellow: #c0a847;
+$buy-and-sell-form-gray: #f6f7f8;
+$login-field-background: #09306e;
+$white: #ffffff;
+$orange: #f7af3e;
+$draft-sell: #E38488;
+$draft-buy: #71c5ac;
+$current-order-header: #264369;
+$current-order-item-bg: #182F4D;
+$current-order-text: #819bbd;
+$hover-gray : #527199;
+$current-order-text-darker: #638abd;
+$blue-hover: #1a72a5;
+
+$colors-obj: (
+    sell-draft: $draft-sell,
+    buy-draft: $draft-buy,
+    buy: $green,
+    sell: $red,
+    current-order-header: $current-order-header,
+);
+
+$color-obj: (
+  white: white,
+  red: $red,
+  red-dark: $red-dark,
+  green: $green,
+  green-dark: $green-dark,
+  blue: $blue,
+  blue-dark: $blue-dark,
+  gray: $gray,
+  light-gray: $light-gray,
+  ultra-ligh-gray: $ultra-ligh-gray,
+  purple: $purple,
+  black: $black,
+  gray-text: $gray-text,
+  gray-header: $gray-header,
+  dark-blue: $dark-blue,
+  gray-icon: $gray-icon,
+  gray-text-2: $gray-text-2,
+  yellow: $yellow,
+  darker-yellow: $darker-yellow,
+  orange: $orange
+);

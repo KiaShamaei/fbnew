@@ -1,0 +1,32 @@
+@import '../../../../../assets/scss/utils/colors';
+.accept {
+  color : $green;
+  text-align: center;
+}
+.reject {
+  color : $red;
+  text-align: center;
+}
+
+.order-dropDown{
+  background-color: white;
+  box-shadow: 0 1px 6px 0 gray;
+  border-radius: 4px;
+  
+}
+.popupOrder{
+  .dialog{
+    width: 50px;
+  }
+  
+  li{
+    
+    padding: 5px;
+    font-size: 13px;
+    &:hover{
+      color:#00C288;
+      cursor: pointer;
+    }
+  }
+
+}

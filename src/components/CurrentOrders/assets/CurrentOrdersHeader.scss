@@ -1,0 +1,70 @@
+@import "./colors";
+@import "../../../assets/scss/utils/colors";
+
+.current-orders-header {
+  .online-icon-more-detail {
+    cursor: pointer;
+  }
+  .online-icon-more-detail.active {
+    color: #0c91e9;
+  }
+  padding: 8px;
+  .view-modes {
+    margin-left: 8px;
+  }
+  $colors: (
+    buy: $green,
+    draft-buy: $draft-buy,
+    sell: $red,
+    draft-sell: $draft-sell,
+  );
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .view-modes {
+    .view-mode-item {
+      font-size: 18px;
+      margin: auto 0;
+      margin-right: 15px;
+      cursor: pointer;
+      &.active {
+        color: $blue;
+      }
+    }
+    .view-mode-item.online-icon-clock {
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+    .view-mode-item.online-icon-clock.active {
+      color: #fff;
+    }
+  }
+  .modes {
+    .circle {
+      $size: 14px;
+      height: $size !important;
+      width: $size !important;
+      border-radius: 50%;
+      margin: auto 3px;
+      cursor: pointer;
+      position: relative;
+      transition: 0.1s ease-in;
+      @each $name, $color in $colors {
+        &.#{$name} {
+          border: 1.5px solid $color;
+          background-color: transparent;
+          &.active {
+            background-color: $color;
+          }
+        }
+      }
+      .item{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+  }
+}

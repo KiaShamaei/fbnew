@@ -1,0 +1,32 @@
+.drposit-date {
+    height: 100%;
+    width: 21%;
+  
+    .is-remain-negative {
+        color: #ff526d;
+    }
+    .radio {
+        .radio-container {
+            direction: ltr;
+            .radio-title {
+                font-weight: 400;
+                width: 210px;
+            }
+            margin: 9px 0;
+        }
+    }
+}
+
+
+.requestMoneyLoader{
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 20%;
+   
+    left: 78%;
+    top: 32%;
+}

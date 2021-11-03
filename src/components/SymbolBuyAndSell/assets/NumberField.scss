@@ -1,0 +1,18 @@
+@import '../../../assets/scss/utils/colors';
+
+.price-up-down {
+    background-color: white;
+    i {
+        color: $gray-text-2;
+        font-size: 8px;
+        cursor: pointer;
+    }
+    .online-icon-angel-up {
+        margin-left: 3px;
+        margin-top: 5px;
+        transform: translateX(0.4px);
+    }
+    .online-icon-angel-down {
+        margin-top: 4px;
+    }
+}

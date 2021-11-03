@@ -1,0 +1,44 @@
+.symbol-group-item {
+    $background: #EEF8FF;
+    width: 25%;
+    height: 25%;
+    box-sizing: border-box;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .symbol-group-item-contianer {
+       
+        &:hover {
+            .image-container {
+                background-color: #e3f3ff;
+            }
+        }
+        
+        .image-container {
+            cursor: pointer;
+            display: flex;
+            width: 75px;
+            height: 75px;
+            border-radius: 8px;
+            background-color: $background;
+            img {
+                margin: auto;
+                object-fit: contain;
+            }
+        }
+
+        .title {
+            
+           
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 13px;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+            white-space: nowrap;
+            display: block;
+            text-align: center;
+        }
+    }
+}

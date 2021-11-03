@@ -1,0 +1,14 @@
+@import '../../../assets/scss/utils/sizes';
+
+.layout-container {
+    width: 100%;
+    & > div {
+        direction: ltr;    
+    }
+
+    .list {
+        &.horizontal {
+            display: flex;
+        }
+    }
+}

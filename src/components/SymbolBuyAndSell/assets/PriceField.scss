@@ -1,0 +1,17 @@
+@import '../../../assets/scss/utils/colors';
+
+.min-max-price {
+    font-size: 12px;
+    .online-icon-chain {
+        font-size: 13px;
+        color: #828282;
+        &.is-chain-active {
+            &.green {
+                color: $green;
+            }
+            &.red {
+                color: $red;
+            }
+        }
+    }
+}

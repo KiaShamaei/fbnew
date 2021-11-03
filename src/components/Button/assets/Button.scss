@@ -1,0 +1,59 @@
+@import '../../../assets/scss/utils/colors';
+
+.button {
+    border: 0;
+    padding: 8px 32px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 4px;
+    @mixin dye($color, $second-color) {
+        &.outline {
+            border: 1px solid $color;
+            background-color: transparent;
+            color: $color;
+            &:hover {
+                color: white;
+                background-color: $color;
+            }
+        }
+        &:not(.outline) {
+            background-color: $color;
+            &:hover {
+                background-color: $second-color;
+            }
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+    &.green {
+        @include dye($green, #26a781);
+    }
+    &.blue {
+        @include dye($blue, $blue-hover);
+    }
+    &.red {
+        @include dye($red, #e23752);
+    }
+    &.navy-blue {
+        @include dye(#182F4D, #264369);
+    }
+    &.navy-blue-light {
+        @include dye(#264369, #395983);
+    }
+    &.transparent {
+        color: $blue;
+        background-color: transparent;
+    }
+    &.gray {
+        @include dye($button-gray, $gray-text-2);
+    }
+    &.yellow {
+        @include dye($yellow, $darker-yellow);
+        color: $black;
+    }
+    &.white {
+        @include dye($white, $white);
+    }
+}

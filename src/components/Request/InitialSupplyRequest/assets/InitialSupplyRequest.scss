@@ -1,0 +1,40 @@
+@import '../../../../assets/scss/utils/colors';
+
+.initia-lsupply-request {
+    .dialog {
+        width: 900px;
+        .dialog-body {
+            padding: 32px;
+            font-size: 13px;
+            
+            .condition-title {
+                color: $red;
+            }
+            .actions {
+                i {
+                    cursor: pointer;
+                    color: $blue;
+                    font-size: 16px;
+                }
+            }
+            .condition-list {
+                li {
+                    position: relative;
+                    margin-top: 6px;
+                    &::after {
+                        content: '';
+                        $size: 5px;
+                        height: $size;
+                        width: $size;
+                        background-color: #E92C38;
+                        border-radius: 50%;
+                        position: absolute;
+                        display: block;
+                        right: -8px;
+                        top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

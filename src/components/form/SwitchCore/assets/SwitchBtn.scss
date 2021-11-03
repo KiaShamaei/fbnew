@@ -1,0 +1,38 @@
+.switch {
+  .item {
+    position: relative;
+    width: 100%;
+  }
+  .btns {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+    .btn-switch {
+      position: relative;
+      width: 30px;
+      height: 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: #e1d9d9;
+      &.active {
+        background-color: #73f2cc;
+        .circle {
+          background-color: #00c288;
+          left: 100%;
+        }
+      }
+      .circle {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        transition: 0.2s;
+        border-radius: 50px;
+        background-color: #b7b7b7;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+}

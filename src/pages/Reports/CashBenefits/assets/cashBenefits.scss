@@ -1,0 +1,34 @@
+@import '../../../../assets/scss/utils/colors';
+.header-benefits {
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.15);
+
+
+}
+.main-benefits {
+  .table {
+    .table-header-container {
+      .table-header {
+        height: 54px;
+      }
+    }
+  }
+  height: calc(100vh - 60px);
+  background-color: white;
+  .header-style {
+    height: 60px  ;
+    border-radius: 5px;
+    background-color: $gray;
+  }
+  .gray {
+    color: gray;
+  }
+  .text-dark {
+    color: $black;
+    font-size: 13px;
+  }
+}
+.text-white {
+  color: white;
+}

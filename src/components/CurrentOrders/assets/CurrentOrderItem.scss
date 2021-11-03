@@ -1,0 +1,126 @@
+@import "./colors";
+
+.current-order-item {
+  border-radius: 3px;
+  overflow: hidden;
+  .actions {
+    background-color: $current-order-item-bg;
+    border-bottom: 1px solid #a7bbd5;
+    font-size: 15px;
+    .current-order-item-header-action {
+      .send-btn-item {
+        font-size: 10px;
+        height: 15px !important;
+        width: 15px !important;
+        border-radius: 50%;
+        line-height: 16px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 1px;
+        i {
+          width: 100% !important;
+          height: 100% !important;
+          display: inline-block;
+        }
+      }
+      i {
+        cursor: pointer;
+      }
+      .active {
+        color: $blue;
+      }
+      .confirm {
+        $size: 12px;
+        font-size: 10px;
+        height: $size + 3px;
+        width: $size + 3px;
+        border-radius: 50%;
+        line-height: $size + 4px;
+        text-align: center;
+        @each $name, $color in $colors-obj {
+          &.#{$name} {
+            background-color: $color;
+          }
+        }
+      }
+      .online-icon-up-arrow {
+        transition: 0.2s ease-in;
+        height: 15px;
+        &.expanded {
+          transform: rotate(180deg);
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  .header {
+    padding: 2px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    .title {
+      font-size: 15px;
+    }
+  }
+  .body {
+    background-color: $current-order-item-bg;
+    transition: height 0.3s ease-in;
+    $height: 35px;
+    $more-detail-height: 100px;
+    height: $height;
+    font-size: 14px;
+    position: relative;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    &.is-confirm-dialog-display {
+      height: 140px !important;
+    }
+    &.is-calculator {
+      height: 295px !important;
+    }
+    &.is-edit-form-display {
+      height: 250PX !important;
+    }
+    &.is-expanded {
+      height: $height + $more-detail-height;
+      .current-order-more-details {
+        display: block !important;
+      }
+    }
+    &.compressed {
+      $height: 115px;
+      height: $height;
+      &.is-expanded {
+        height: $height + $more-detail-height;
+        .current-order-more-details {
+          display: block !important;
+        }
+      }
+    }
+
+    .actions {
+      border-bottom: 1px solid #a7bbd5;
+      font-size: 14px;
+    }
+    .details {
+      font-size: 14px;
+    }
+    .current-order-more-details-container {
+      .current-order-more-details {
+        padding: 8px;
+        display: none;
+        padding-bottom: 12px;
+        font-size: 13px;
+        .row {
+          margin-top: 6px;
+          .title {
+            color: $current-order-text;
+            &::after {
+              content: ": ";
+            }
+          }
+        }
+      }
+    }
+  }
+}

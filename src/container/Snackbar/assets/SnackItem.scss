@@ -1,0 +1,36 @@
+@import '../../../assets/scss/utils/colors';
+
+.snack-item {
+    position: fixed;
+    $height: 40px;
+    z-index: 21;
+    left: 35px;
+    width: auto !important;
+    height: $height;
+    line-height: $height;
+    padding: 0 8px;
+    display: flex;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    i {
+        color: white;
+        flex-grow: 1;
+        text-align: left;
+        direction: ltr;
+        display: block;
+        margin: auto;
+        line-height: $height;
+    }
+    &.success {
+        background-color: $green;
+        color: white;
+    }
+    &.error {
+        background-color: $red;
+        color: white;
+    }
+    &.warning {
+        background-color: $yellow;
+    }
+}

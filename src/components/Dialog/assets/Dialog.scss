@@ -1,0 +1,41 @@
+@import "../../../assets/scss/utils/colors";
+
+.dialog {
+  $radius: 5px;
+  box-shadow: 0 1px 10px 0 rgba($color: #000000, $alpha: .5);
+  $padding: 8px;
+  z-index: 3;
+  background-color: white;
+  position: relative;
+  width: 300px;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  .dialog-header {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    padding: 12px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: $blue;
+    .title {
+      color: white;
+      text-align: center;
+      margin-right: 16px;
+    }
+    .close {
+      margin: auto;
+      height: 18px;
+      i {
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+
+  .dialog-body {
+    padding: $padding;
+    height: 94%;
+    position: relative;
+  }
+}

@@ -1,0 +1,31 @@
+@import "./colors";
+.Current-Order-Item-Header{
+    .header{
+        height: auto;
+        padding: 3px 0;
+        position: relative;
+        .btn-checkbox{
+            position: absolute;
+            top: 50%;
+            right: 3%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: none !important;
+        }
+        .btn-checkbox.show-checkbox{
+            display: inline-block !important;
+        }
+    }
+    .header.orderBuy{
+        background-color: #00C288;
+    }
+    .header.orderSell{
+        background-color: #FF526D;
+    }
+    .header.preOrderBuy{
+        background-color: $draft-buy;
+    }
+    .header.preOrderSell{
+        background-color:  $draft-sell;
+    }
+}

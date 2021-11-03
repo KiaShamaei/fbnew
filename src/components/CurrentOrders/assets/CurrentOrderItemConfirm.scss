@@ -1,0 +1,25 @@
+@import '../../../assets/scss//utils/colors';
+
+
+.current-order-confirm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $current-order-item-bg;
+    z-index: 2;
+    .accept-btn {
+        &:hover {
+            background-color: $hover-blue !important;
+        }
+    }
+    .cancel-btn {
+       color: $black;
+       background: $current-order-text-darker !important;
+        &:hover {
+            background-color: $hover-gray !important;
+            color: $white;
+        }
+    }
+}

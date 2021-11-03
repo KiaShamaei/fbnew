@@ -1,0 +1,45 @@
+@import "sizes";
+
+.watch-table-item {
+    .last {
+        font-size: 13px;
+        width: $last-size;
+        margin: auto 0;
+    }
+
+    .final {
+        font-size: 13px;
+        width: $final-size;
+        margin: auto 0 !important;
+    }
+
+    .symbol {
+        font-size: 14px;
+        width: $symbol-size;
+    }
+}
+@media only screen and (max-width: 1550px) {
+    
+    .watch-table-item {
+        .last {
+            font-size: 12px;
+            width: 28%;
+            
+        }
+
+        .final {
+            font-size: 11px;
+            width: 27%;
+            margin: auto 0 !important;
+           
+        }
+
+        .symbol {
+            font-size: 11px;
+            width: 16%;
+        }
+        .chart {
+            width: 8%;
+        }
+    }
+}

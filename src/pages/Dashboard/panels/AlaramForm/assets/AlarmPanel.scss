@@ -1,0 +1,32 @@
+@import "../../../../../assets/scss/utils/colors";
+
+i.alarm {
+  font-size: 24px;
+  color: $blue;
+}
+.alarm {
+  ul {
+    padding-right: 15px;
+  }
+}
+.scrollCustom{
+  
+  overflow: visible;
+  .scroll-thumb {
+    width: 4px !important;
+    margin-right: 3px;
+    transition: 200ms;
+    background-color: rgba(219, 218, 218, 0.7);
+  }
+  .scroll-thumb:hover {
+    background-color: #c7c7c7;
+    cursor: grab;
+    width: 8px !important;
+    transition: 50ms;
+  }
+  .scroll-thumb:active {
+    background-color: #c7c5c5;
+    cursor: grabbing;
+    width: 8px !important;
+  }
+}

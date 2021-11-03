@@ -1,0 +1,14 @@
+@import '../../../../assets/scss/utils/colors';
+
+.main-treemap-container {
+    width:37%;
+    border: 1px solid $table-border-gray;
+    border-radius: 10px;
+    .header-treemap-container {
+        display: flex;
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        border:1px solid transparent;
+        background-color: rgb(210, 228, 252);
+    }
+}

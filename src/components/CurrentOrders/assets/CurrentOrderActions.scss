@@ -1,0 +1,70 @@
+.current-order-actions {
+  padding: 8px;
+  background-color: #182f4d;
+  border-radius: 4px;
+  .checkbox {
+    border-radius: 3px;
+    background-color: #fff;
+    .online-icon-tick {
+      display: none;
+    }
+  }
+  .checkbox.checked {
+    background-color: #0c91e9;
+    .online-icon-tick {
+      display: block;
+    }
+  }
+  .send {
+    color: #5d789c;
+    i.online-icon-tick {
+      font-size: 0.5rem;
+      border: 0.5px solid #5d789c;
+      border-radius: 50px;
+      padding: 4px;
+      color: #5d789c;
+    }
+  }
+  .send.active{
+    color: #fff;
+    cursor: pointer;
+    i.online-icon-tick{
+      color: #fff;
+      font-size: 0.5rem;
+      border: 0.5px solid #fff;
+      border-radius: 50px;
+      padding: 4px;
+    }
+  }
+  .delete {
+    color: #5d789c;
+    i.online-icon-delete {
+      color: #5d789c;
+    }
+  }
+  .delete.active{
+    color: #fff;
+    cursor: pointer;
+    i{
+      color: #fff;
+    }
+  }
+}
+.current-order-actions-container.active{
+  position: relative;
+  height: 180px;
+  border-radius: 5px;
+  background-color: #182f4d;
+  .delete-all-confirm{
+    position: absolute;
+    z-index: 10;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    .text-confirm{
+      margin-bottom: 16px !important;
+      display: block;
+      text-align: center;
+    }
+  }
+}

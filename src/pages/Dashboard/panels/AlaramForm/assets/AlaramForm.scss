@@ -1,0 +1,49 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.alarm-dialog {
+    overflow: visible;
+    .dialog {
+        font-weight: 300;
+        width: 350px !important;
+        .combobox {
+            input {
+                font-weight: 300;
+            }
+        }
+        .dialog-header {
+            display: flex;
+            background-color: $blue;
+            .title {
+                flex-grow: 1;
+                text-align: center;
+                color: white;
+            }
+            position: relative;
+            .close {
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                .online-icon-close {
+                    font-size: 21px;
+                    color: white;
+                }
+            }
+        }
+        .dialog-body {
+            label {
+                font-size: 13px;
+            }
+            padding: 16px 32px;
+            .save-button {
+                padding: 8px 42px;
+            }
+
+            .group-title {
+                display: block;
+                font-size: 14px;
+                color: $gray-text;  
+            } 
+        }
+    }
+}

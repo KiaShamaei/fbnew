@@ -1,0 +1,110 @@
+@import '../../../../../assets/scss/utils/shadow';
+@import '../../../../../assets/scss/utils/colors';
+
+.watch-menu {
+    position: relative;
+    $left: 4px;
+    
+    margin-left: 14px;
+    background-color: white;
+    $width: 157px;
+    $b-bottom: 1px solid #eee;
+    margin-top: -12px;
+    .watch-menu-loading {
+        > span {
+            display: block;
+        }
+    }
+    .watch-menu-contaienr {
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 8;
+        background-color: white;
+        .new-watch {
+            &::placeholder {
+                color: #C8C9CC;
+            }
+        }
+        &:not(.is-close) {
+            box-shadow: $shadow-sm;
+        }
+        &.is-close {
+            border: 1px solid $light-gray;
+            .watch-items-menu-dropdown {
+                display: none;
+            }
+        }
+        .watch-menu-selected {
+            width: $width;
+            padding: 4px 0;
+            padding-right: $left;
+            font-weight: 400;
+            font-size: 13px;
+            position: relative;
+            z-index: 2;
+            padding-right: 8px;
+            .online-icon-down-arrow {
+                font-size: 10px;
+            }
+        }
+        .watch-items-menu-dropdown {
+            border-top: $b-bottom;
+            background-color: white;
+            top: 100%;
+            left: 0;
+            z-index: 4;
+            width: $width;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            overflow: hidden;
+            .watch-menu-new {
+                padding: 8px;
+                border-bottom: 1.5px solid #e9e9e9;
+                border-bottom: $b-bottom;
+                input {
+                    outline: none;
+                    box-sizing: border-box;
+                    border: 0;
+                    width: 65px;
+                }
+                .online-icon-add {
+                    color: $blue;
+                    cursor: pointer;
+                    margin-left: 3px;
+                }
+            }
+            .watch-menu-list {
+                position: relative;
+                z-index: 4;
+                .watch-menu-item {
+                    padding: 4px 8px;
+                    font-size: 13px;
+                    &.is-selected {
+                        // background-color: #f7f7f7;
+                        color: white;
+                    }
+                    &:hover {
+                        background-color: #f7f7f7;
+                        cursor: pointer;
+                    }
+                    .online-icon-delete {
+                        cursor: pointer;
+                        border-radius: 50%;
+                        $size: 21px;
+                        height: $size;
+                        line-height: $size;
+                        width: $size;
+                        text-align: center;
+                        color: $gray-text;
+                        &:hover {
+                            color: white;
+                            background-color: $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

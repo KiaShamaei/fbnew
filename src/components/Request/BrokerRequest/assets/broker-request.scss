@@ -1,0 +1,27 @@
+@import "../../../../assets/scss/utils/colors";
+
+.accept {
+    color: $green;
+    text-align: center;
+}
+.reject {
+    color: $red;
+    text-align: center;
+}
+.c-green {
+    color: $green;
+}
+
+.broker-lines {
+    margin: 10px 0px;
+    font-size: 13px;
+    padding: 0px 30px;
+}
+.broker-request  {
+    .dialog {
+        width: 1100px;
+    }
+}
+.answer-field {
+    width: 200px;
+}

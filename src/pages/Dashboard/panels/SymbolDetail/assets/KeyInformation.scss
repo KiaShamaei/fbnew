@@ -1,0 +1,22 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.key-informations {
+    .key-information-field {
+        padding: 0 4px;
+        margin-top: 7px;
+        .label {
+            font-size: 13px;
+            color: #828282;
+        }
+        .value {
+            font-size: 13px;
+        }
+        .marketType {
+            font-size: 13px;
+        }
+
+    }
+    .reject {
+        color : $red
+    }
+}

@@ -1,0 +1,135 @@
+@import "../../../../../assets/scss/utils/colors";
+
+
+
+
+
+
+.news-detail-dialog {
+  .dialog {
+    width: 900px;
+    // height: 250px;
+    box-shadow: 2px 2px 20px 0;
+    min-height: 200px;
+    min-width: 700px;
+    resize: both;
+    direction: ltr;
+    transition: 100ms;
+    max-height: 600px;
+    max-width: 1500px;
+  }
+}
+.news {
+  padding: 12px;
+  .CustomScrollbar {
+    overflow: visible;
+    .scroll-thumb {
+      width: 4px !important;
+      margin-right: -10px;
+      transition: 200ms;
+    }
+
+    .scroll-thumb {
+      background-color: rgba(219, 218, 218, 0.7);
+      border-radius: 3px;
+      height: auto;
+      
+    }
+    .scroll-thumb:hover {
+      background-color: #c7c7c7;
+      cursor: grab;
+      width: 8px !important;
+      transition: 50ms;
+    }
+    .scroll-thumb:active {
+      background-color: #c7c5c5;
+      cursor: grabbing;
+      width: 8px !important;
+    }
+  }
+  .news-header {
+    background-color: $ultra-ligh-gray;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    display: flex;
+    .title {
+      flex-grow: 1;
+    }
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      margin: auto 0;
+      color: $blue;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  margin: 0 !important;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  .list {
+    height: unset !important;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .news-item {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i {
+      color: $blue;
+    }
+    .title {
+      font-size: 13px;
+      flex-grow: 1;
+      margin: auto 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 16px;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    .date-and-detail-btn {
+      font-weight: 300;
+      font-size: 14px;
+      display: flex;
+      height: 100%;
+      padding: 0px 0;
+      display: flex;
+      align-items: center;
+
+      .date {
+        font-size: 14px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      i {
+        font-size: 16px;
+        margin-right: 4px;
+      }
+      .time {
+        color: #a9a9aa;
+        font-size: 12px;
+        padding: 1px;
+        margin-right: 3px;
+      }
+    }
+    border-bottom: 1px solid #eeeeee;
+  }
+}

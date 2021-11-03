@@ -1,0 +1,46 @@
+@import "../../../../../assets/scss/utils/colors";
+
+.symbol-group-list-container {
+  .symbol-group-header {
+    padding: 8px 16px;
+    h2 {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    i {
+      font-size: 19px;
+      color: $gray-text;
+      cursor: pointer;
+    }
+  }
+  /* display: flex; */
+  flex-wrap: wrap;
+  width: 99%;
+  height: 95%;
+  position: absolute;
+  left: 4px;
+  top: 44px;
+  z-index: 3;
+  background-color: white;
+
+  .scroll-view {
+    overflow-y: scroll;
+    width: 100%;
+    transition: 200ms;
+  }
+  .scroll-thumb {
+    background-color: rgba(219, 218, 218, 0.7);
+    width: 70% !important;
+    transition: 100ms;
+  }
+  .scroll-thumb:hover {
+    background-color: rgba(179, 179, 179, 0.7);
+    width: 100% !important;
+    cursor: grab;
+  }
+  .scroll-thumb:active {
+    background-color: rgba(179, 179, 179, 0.7);
+    width: 100% !important;
+    cursor: grabbing;
+  }
+}

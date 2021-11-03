@@ -1,0 +1,61 @@
+.base-line-chart {
+    .line {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
+    .area {
+        fill: url(#line-gradient);
+    }
+
+    .zeroline {
+        stroke: #ccc;
+    }
+
+    .overlay {
+        fill: transparent;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+    .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+    .focus {
+        circle {
+            border: 4px solid white;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+            fill: #00c288;
+        }
+
+        text {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        * {
+            direction: ltr;
+        }
+    }
+
+    .tooltip {
+        fill: rgba(0, 0, 0, 0.6);
+    }
+
+    .tooltip-date,
+    .tooltip-likes {
+        font-weight: bold;
+        fill: white;
+    }
+}

@@ -1,0 +1,30 @@
+@import "../../../../../../../../assets/scss/utils/colors";
+.tree-map-dialog{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border:1px solid transparent
+}
+
+.tree-map-dialog-header {
+    height: 65px;
+    background-color: $gray;
+    border : 1px solid $gray;
+    border-radius: 5px;
+}
+.f-s-12 {
+    font-size: 12px;
+}
+.text-align-start {
+    text-align: start;
+}
+.green-color{
+    color : $green;
+    text-align: left;
+}
+.turnover-detail {
+    font-size: 12px;
+}
+.text-align-left {
+    text-align: left;
+}

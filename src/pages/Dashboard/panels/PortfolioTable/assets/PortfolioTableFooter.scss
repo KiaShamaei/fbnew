@@ -1,0 +1,15 @@
+.portfolio-table-no-data {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    line-height: 19px;
+}
+.portfolio-table-footer {
+    display: flex;
+    font-size: 13px;
+    $size: 37px;
+    height: $size;
+    background-color: #E6F5FF;
+    line-height: $size;
+    padding: 0 8px;
+}

@@ -1,0 +1,35 @@
+@import '../../../assets/scss/utils/colors';
+
+.table-data-alert {
+    font-size: 14px;
+}
+
+.not-data-today-trade {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    .img-container {
+        display: inline-block;
+        padding: 16px;
+        height: 95px;
+        width: 95px;
+        margin-top: 32px;
+        margin-bottom: 20PX;
+        background-color: #EEF8FF;
+        border-radius: 50%;
+        text-align: center;
+        img {
+            height: 65px;
+        }
+    }
+    .text {
+        font-size: 13px;
+        margin-top: 4px;
+        text-align: center;
+        display: block;
+        button {
+            margin-top: 20px;
+        }
+    }
+}

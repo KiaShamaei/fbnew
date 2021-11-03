@@ -1,0 +1,115 @@
+@import '../../../assets/scss/utils/colors';
+
+.symbol-change-chart {
+    height: 8px;
+    position: relative;
+    width: 100%;
+    background-color: $gray;
+    border-radius: 4px;
+    $tranistion: 0.3s ease-in-out;
+    & > div {
+        font-size: 14px;
+    }
+    .symbol-change-chart-line {
+        transition: $tranistion;
+        position: absolute;
+    }
+    @mixin color {
+        height: 100%;
+
+    }
+    @mixin circle {
+        border: 1.5px solid $gray-text;
+        $size: 12px;
+        height: $size;
+        width: $size;
+        top: 50%;
+        border-radius: 50%;
+        z-index: 1;
+        background-color: white;
+        transform: translateY(-50%);
+        transition: $tranistion;
+        position: absolute;
+    }
+    @mixin anchor {
+        font-size: 9px;
+        transition: left 0.1s ease;
+        i {
+            color: #736F6D;
+        }
+        position: absolute;
+    }
+    @mixin number {
+        bottom: 112%;
+        transition: $tranistion;
+        position: absolute;
+    }
+    .red {
+        background-color: $red;
+        @include color;
+    }
+    .green {
+        background-color: $green;
+        @include color;
+    }
+    .gray {
+        background-color: $gray;
+        @include color;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .left-circle {
+        @include circle;
+    }
+    .right-circle {
+        @include circle;
+    }
+    .bottom-anchor {
+        @include anchor;
+        bottom: 4px;
+    }
+    .top-anchor {
+        @include anchor;
+        top: 7px;
+    }
+    .left-number {
+        left: 0;
+        @include number;
+    }
+    .center-number {
+        left: 50%;
+        transform: translateX(-50%);
+        .__react_component_tooltip {
+            top: 200% !important;
+            &::after{
+                top: -22% !important;
+                transform: rotate(180deg) !important;
+            }
+        }
+        &::after {
+            height: 50%;
+            width: 1px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            bottom:-50%;
+            transform: translateX(-50%);
+            content: '';
+        }
+        @include number;
+    }
+    .right-number {
+        right: 0;
+        @include number;
+    }
+    .top-anchor-tooltip-text {
+        color: white;
+        font-size: 10px;
+        * {
+            font-size: 10px;
+            text-align: center;
+            display: block;
+            color: white;
+        }
+    }
+}

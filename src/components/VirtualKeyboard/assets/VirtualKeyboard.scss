@@ -1,0 +1,23 @@
+@import '../../../assets/scss/utils/colors';
+
+.keboard {
+    background-color: #001e4a;
+    .keyboard-slice {
+        display: flex;
+        direction: ltr;
+        justify-content: center;
+    }
+    .space-container {
+        display: flex;
+        justify-content: center;
+        .space {
+            width: 250px;
+            height: 35px;
+            border: 1px solid rgb(91, 96, 141);
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(91, 96, 141);
+            }
+        }
+    }
+}

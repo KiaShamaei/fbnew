@@ -1,0 +1,32 @@
+@import '../../../assets/scss/utils/colors';
+
+.watch-menu-to-add-and-remove-item {
+    display: flex;
+    padding: 4px;
+    font-size: 14px;
+    &.not-exist {
+        &:hover {
+            .title {
+                color: $blue;
+            }
+            .add {
+                color: $blue;
+            }
+        }
+    }
+    .add {
+        cursor: pointer;
+        color: $gray-text;
+    }
+    .checked {
+        $height: 15px; 
+        background-color: $green;
+        border-radius: 50%;
+        height: $height;
+        width: $height;
+        line-height: 16px;
+        text-align: center;
+        font-size: 8px !important;
+        color: white;
+    }
+}

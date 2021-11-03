@@ -1,0 +1,17 @@
+@import '../../../assets/scss/utils/colors';
+
+.buy-and-sell-form-symbol-detail {
+    font-size: 14px;
+    margin-bottom: 16px;
+    .buy-and-sell-form-symbol-detail-item {
+        &:nth-child(even) {
+            padding-right: 8px;
+        }
+        padding-top: 8px;
+        padding-bottom: 8px;
+        label {
+            color: $gray-text-2;
+            flex-grow: 1;
+        }
+    }
+}

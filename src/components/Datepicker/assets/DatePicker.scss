@@ -1,0 +1,66 @@
+@import "../../../assets/scss/utils/colors";
+
+.datepicker-container {
+    position: relative;
+    .date-picker {
+        position: absolute;
+        z-index: 1;
+        width: 286px;
+        input {
+            width: 100%;
+            display: block;
+            padding: 6px 8px;
+        }
+        padding: 0;
+        border: 1px solid $gray;
+        background-color: white;
+        .date-picker-header {
+            padding: 16px 0;
+            .arrows {
+                display: flex;
+                direction: ltr;
+                flex-grow: 1;
+                margin: auto;
+                i {
+                    font-size: 14px;
+                    $size: 25px;
+                    height: $size;
+                    width: $size;
+                    line-height: $size;
+                    border-radius: 50%;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $light-gray;
+                    }
+                }
+                .online-icon-right-arrow {
+                    margin-left: 20px;
+                }
+                .online-icon-left-arrow {
+                    margin-left: 4px;
+                }
+            }
+        }
+        .combobox {
+            width: 110px !important;
+            .input-core {
+                border: none;
+                input {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+            .list-container {
+                border: 1px solid $gray;
+                .scroll-view {
+                    ul {
+                        li {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

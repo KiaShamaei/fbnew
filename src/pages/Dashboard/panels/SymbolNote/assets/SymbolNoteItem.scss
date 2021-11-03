@@ -1,0 +1,50 @@
+@import "../../../../../assets/scss/utils/colors";
+
+.symbol-note-item {
+    border-bottom: 1px solid $gray;
+    padding: 7px 0;
+    margin: 0 8px;
+    .head {
+        .symbol-name-and-title {
+            font-size: 14px;
+            .symbol-name {
+                color: $green;
+                font-weight: 600;
+                display: block;
+                &::before {
+                    content: '#';
+                }
+                margin-left: 8px;
+            }
+        }
+        .date-and-delete {
+            $margin: 9px;
+            font-size: 14px;
+            
+            .delete {
+                color: $blue;
+                font-size: 16px;
+            }
+            & > * {
+                color: #828282;
+                display: block;
+                text-align: center;
+                position: relative;
+                margin: auto;
+                &:not(:last-child) {
+                    &::after {
+                        border-right: 1px solid $gray;
+                        height: 100%;
+                        content: "";
+                        margin: auto $margin;
+                    }
+                }
+            }
+        }
+    }
+    .body {
+        color: #828282;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+}

@@ -1,0 +1,66 @@
+@import "../../../../assets/scss/utils/colors";
+.header-turnover {
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.main-turnover {
+  .table {
+    .table-header-container {
+      .table-header {
+        height: 54px;
+      }
+    }
+  }
+  .header-icon {
+    color: white;
+    font-size: 30px;
+  
+  }
+  height: calc(100vh - 60px);
+  background-color: white;
+  .header-style {
+    height: 60px;
+    border-radius: 5px;
+    background-color: $gray;
+    
+  }
+  .balance-sheet-footer {
+    padding: 10px;
+    border-top: 1px solid $table-border-gray;
+    border-bottom: 1px solid $table-border-gray;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    background-color: $ultra-ligh-gray;
+    height: 43px;
+    .total-width {
+      width: 52%;
+    }
+    .debtor-width {
+      width: 13%;
+    }
+    .creditor-width {
+      width: 13%;
+    }
+  }
+  .gray {
+    color: gray;
+  }
+  .text-dark {
+    color: $black;
+    font-size: 13px;
+  }
+  .border-top-none {
+    border-top: 0;
+  }
+  .direction-ltr {
+    direction: ltr;
+  }
+  .f-s-12 {
+    font-size: 12px;
+  }
+}
+.text-white {
+  color: white;
+}

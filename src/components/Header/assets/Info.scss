@@ -1,0 +1,137 @@
+@import "../../../assets/scss/utils/colors";
+
+.info {
+  font-size: 14px;
+  @media screen and (max-width: 1550px) {
+    margin-right: 32px;
+  }
+  .info-section {
+    margin: auto 16px;
+    position: relative;
+    &.power {
+      width: 154px;
+      @media screen and (max-width: 1530px) {
+        width: 0;
+      }
+    }
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -18px;
+      width: 0.5px;
+      height: 19px;
+      background-color: $gray;
+      transform: translateY(-50%);
+      @media screen and (max-width: 1550px) {
+        left: -5px;
+      }
+    }
+  }
+  .overall {
+    margin-right: 5px;
+  }
+  .overall-index {
+    @media screen and (max-width: 1550px) {
+      width: 246px;
+    }
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 1px;
+    white-space: nowrap;
+    .numbers {
+      display: flex;
+      font-size: 13px;
+      width: 100%;
+      direction: ltr;
+    }
+    .header-info-marker {
+      i {
+        margin-top: 3px;
+      }
+    }
+  }
+  .info-time {
+    height: 19px;
+    .date {
+      margin-right: 6px;
+      margin-left: 6px;
+    }
+    .time {
+      width: 54px;
+    }
+  }
+  .market {
+    &.is-opening {
+      .market-status {
+        div {
+          font-size: 9px;
+          color: #ffb705;
+         
+        }
+       
+      }
+      i {
+        color: #ffb705;
+      }
+    }
+    &.is-closed {
+      .market-status {
+        color: $red;
+      }
+      i {
+        color: $red;
+      }
+    }
+    width: 75px;
+    i {
+      color: $green;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .market-status {
+      color: $green;
+    }
+    .f-s-10 {
+      font-size: 10;
+    }
+  }
+
+  .purchasing-power-container {
+    @media screen and (max-width: 1550px) {
+      width: 190px;
+    }
+  }
+  .is-remain-negative {
+    color: $red;
+  }
+  .header-info-marker {
+    .online-icon-information {
+      display: block;
+      margin-top: 2px;
+      margin-left: 4px;
+      color: $blue;
+    }
+    .info-marker-dropdown {
+      padding: 0;
+      top: 42.4px;
+      box-shadow: 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12), 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12);
+    }
+    .overall-index-dropdown {
+      z-index: 4;
+      width: 465px;
+    }
+    .purchasing-power {
+      span {
+        font-size: 13px;
+      }
+      top: 40.4px;
+      width: 422px;
+    }
+  }
+}
+
+.not-in-account {
+  width: 350px !important;
+}

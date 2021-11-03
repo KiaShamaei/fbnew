@@ -1,0 +1,64 @@
+@import '../../../../assets/scss/utils/colors';
+
+.main-stackbar-container {
+    width:37%;
+    border: 1px solid $table-border-gray;
+    border-radius: 10px;
+    .header-stackbar-container {
+        display: flex;
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        border:1px solid transparent;
+        background-color: rgb(210, 228, 252);
+    }
+    @mixin filter-item {
+        display: flex;
+        margin: 0 8px;
+        label {
+            margin: auto;
+            font-size: 13px;
+        }
+        .btn-switch {
+            &.active {
+                .circle {
+                    left: 68%;
+                }        
+            }
+        }
+        .circle {
+            left: 9px;
+            height: 11px;
+            width: 11px;
+            top: 7.3px;
+            background-color: white !important;
+            
+        }
+    }
+    .minimum {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: #09AAD3;
+            }
+        }
+    }
+    .dispute {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: black;
+            }
+        }
+    }
+    .maximum {
+        @include filter-item;
+        .btn-switch {
+            &.active {
+                background-color: #906FDE;
+                
+                
+            }
+        }
+    }
+    
+}

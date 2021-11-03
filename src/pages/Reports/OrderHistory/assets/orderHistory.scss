@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/utils/colors';
+.header-order {
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.15);
+
+
+}
+.main-order {
+  height: calc(100vh - 61px);
+  background-color: white;
+
+  .table {
+    .table-header-container {
+      .table-header {
+        height: 54px;
+      }
+    }
+  }
+  .header-style {
+    height: 60px  ;
+    border-radius: 5px;
+    background-color: $gray;
+  }
+  .gray{
+    color: gray;
+  }
+  .text-dark {
+    color: $black;
+    font-size: 13px;
+  }
+  .header-icon {
+    color: white;
+    font-size: 30px;
+
+  }
+}
+.text-white {
+  color: white;
+}
+.accept{
+  color :$green
+}
+.reject {
+  color: $red;
+}

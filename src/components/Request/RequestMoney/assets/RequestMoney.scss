@@ -1,0 +1,82 @@
+@import '../../../../assets/scss/utils/colors';
+
+.money-request {
+   .delete:hover{
+    color: #E92C38;
+   }
+    .money-requst-form {
+        
+        .money-request-alert {
+            color: #E92C38;
+        }
+    }
+    .dialog {
+        width: 1200px;
+        
+      
+    }
+    .alerts {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .fields {
+        width: 50%;
+      
+       
+    }
+    .form-deposit-money{
+      margin-top: 20px;
+        height: 200px;
+        width: 100%;
+    }
+    .towPart{
+      
+        margin-top: 18px;
+    }
+    .drposit-date {
+        margin-left: 8px;
+        
+        
+        .form-group {
+            label {
+                font-weight: 400;
+            }
+            .radio-container{
+                padding-top: 12px;
+            }
+        }
+        .deposit-date-radio:first-child {
+            margin-top: 0px;
+        }
+        .deposit-date-radio {
+            margin-top: 24px;
+            &:first-child {
+                margin-top: 0px;
+            }
+            .radio-title {
+                font-weight: 400;
+                color: $black;
+            }
+        }
+    }
+    .button {
+        align-self: flex-end;
+        margin-top : 39px;
+    }
+
+    .requested-money {
+       
+        input {
+           
+            direction: ltr;
+            text-align: left;
+        }
+    }
+}
+
+
+.empty-portfolio {
+ 
+    width: 300px;
+}

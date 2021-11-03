@@ -1,0 +1,61 @@
+@import '../../../../assets/scss/utils/colors';
+
+$duration: 300ms;
+
+@mixin ngative-selector {
+    &.nagative-number {
+        color: $red;
+    }
+    color: $green;
+}
+
+@mixin ngative-selector-dark {
+    &:not(.nagative-number) {
+        &.neutral { 
+            color: $green;
+        }
+        color: $green-dark;
+    }
+    &.nagative-number {
+        &.neutral { 
+            color: $red;
+        }
+        &:not(.neutral) {
+            color: $red-dark;
+        }
+    }
+}
+
+.nagative-number {
+    &:not(.neutral) {
+        color: $red;
+    }
+}
+
+.positive-number {
+    &:not(.neutral) {
+        color: $green;
+    }
+}
+.zero-number {
+    &:not(.neutral) {
+        color: black;
+    }
+}
+
+.my-node-enter {
+    font-weight: normal;
+    @include ngative-selector;
+}
+.my-node-enter-active {
+    @include ngative-selector-dark;
+    transition: color $duration;
+}
+.my-node-exit {
+    @include ngative-selector-dark;
+}
+.my-node-exit-active {
+    font-weight: normal;
+    @include ngative-selector;
+    transition: color $duration;
+}

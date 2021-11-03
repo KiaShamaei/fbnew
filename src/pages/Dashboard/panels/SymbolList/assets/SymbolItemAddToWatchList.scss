@@ -1,0 +1,16 @@
+.symbol-item-add-to-watch-list {
+    .icon-eye{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .dropdown {
+        padding: 2px;
+        box-shadow: 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12),
+                    0 1px 6px 0 rgba($color: #000000, $alpha: 0.12);
+        width: unset;
+        white-space: nowrap;
+        .title{
+            font-size: 13px;
+        }
+    }   
+}

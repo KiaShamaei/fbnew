@@ -1,0 +1,66 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.technical-chart {
+    ul{
+        li {
+            margin: 0 35px;
+            cursor: pointer;
+            font-size: 14px;
+            .alert-number {
+                font-size: 10px;
+                background-color: $red;
+                border-radius: 50%;
+                color: white;
+                $size: 15px;
+                height: $size;
+                width: $size;
+                text-align: center;
+                line-height: $size + 3px;
+            }
+            .underline {
+                opacity: 0;
+                height: 2px;
+                width: 20px;
+                background-color: $blue;
+                display: block;
+                margin: 0 auto;
+                margin-top: 4px;
+            }
+
+            i {
+                margin: auto;
+                font-size: 17px;
+            }
+
+            &.active {
+                .title {
+                    color: $blue;
+                }
+                i {
+                    color: $blue;
+                }
+                font-weight: 500;
+
+                .underline {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .tab-list {
+        justify-content: center;
+        background-color: $ultra-ligh-gray;
+        .online-icon-factory {
+            font-size: 20px;
+        }
+        .online-icon-technical {
+            font-size: 20px;
+        }
+    }
+
+    .tab-panel {
+        margin-top: 4px;
+        background-color: white;
+    }
+}

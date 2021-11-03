@@ -1,0 +1,120 @@
+@import "../../../../../assets/scss/utils/colors";
+.customScrollBarSymbolDetail{
+     
+  overflow: visible;
+  .scroll-thumb {
+    width: 4px !important;
+    margin-right: 3px;
+    transition: 200ms;
+    background-color: rgba(219, 218, 218, 0.7);
+  }
+  .scroll-thumb:hover {
+    background-color: #c7c7c7;
+    cursor: grab;
+    width: 8px !important;
+    transition: 50ms;
+  }
+  .scroll-thumb:active {
+    background-color: #c7c5c5;
+    cursor: grabbing;
+    width: 8px !important;
+  }
+}
+.sotck-detail {
+    height: 96%;
+    position: relative;
+    .sotck-detail:hover {
+        width: 150px;
+        background-color: brown;
+    }
+   
+    .symbol-name {
+        white-space: nowrap;
+    }
+    
+    .title-bar {
+        background-color: $ultra-ligh-gray;
+        padding: 3px;
+        padding-right: 9px;
+        border-radius: 4px;
+        font-size: 13px;
+    }
+    .sell-and-buy {
+        display: flex;
+        width: 100%;
+        .button-container {
+            width: 50%;
+            &.sell {
+                padding-right: 4px;
+            }
+            &.buy {
+                padding-left: 4px;
+            }
+        }
+        .button {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    .sotck-name-and-prices {
+        padding: 11px;
+        padding-left: 10px;
+        padding-right: 15px;
+        padding-bottom: 0;
+        .clock {
+            font-size: 32px;
+            color: $blue;
+        }
+
+        h3 {
+            font-size: 23px;
+            font-weight: 600;
+        }
+
+        .final-price {
+            font-weight: 800;
+            font-size: 23px;
+            color: $green;
+        }
+
+        .change-and-diffrence {
+            margin: auto 0;
+            margin-left: 12px;
+            font-size: 13px;
+
+            .percent {
+                color: $green;
+                margin-left: 4px;
+            }
+        }
+    }
+    .final-price-and-volumne-container {
+        padding: 15px;
+        padding-top: 0px;
+        position: relative;
+        z-index: 1;
+        .final-price-and-volumne {
+            font-size: 14px;
+            margin: 7px 0;
+        }
+    }
+
+    .symbol-turnover {
+        .symbol-turnover-text {
+            font-weight: 600;
+            margin-right: 9px;
+            margin-top: -8px;
+        }
+    }
+
+    .turnover-detail {
+        font-size: 12px;
+    }
+}
+
+.bg-white {
+    background-color: white;
+}

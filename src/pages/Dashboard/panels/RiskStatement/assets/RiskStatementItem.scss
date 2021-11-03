@@ -1,0 +1,50 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.risk-statement-item {
+    display: flex;
+    height: auto;
+    border-bottom: 1px solid $gray;
+    padding: 10px 5px;
+    position: relative;
+    
+    .risk-statement-item-loading {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .text {
+        width: 95%;
+        margin: auto;
+        font-size: 13px;
+       
+        
+    }
+    .risk-statement-item-status {
+        
+        margin: auto;
+        border: 0;
+        background-color: $green;
+        text-align: center;
+        $size: 20px;
+        height: $size;
+        border-radius: 4px;
+        padding: 0 8px;
+        font-size: 14px;
+        color: white;
+        i {
+            color: white;
+            font-size: 11px;
+        }
+        &.confirmed {
+            padding: 0;
+            width: $size;
+            line-height: 24px;
+            border-radius: 50%;
+        }
+    }
+}

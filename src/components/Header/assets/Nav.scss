@@ -1,0 +1,58 @@
+@import '../../../assets/scss/utils/colors';
+
+.header-nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &  * {
+        cursor: pointer;
+    }
+    & div {
+        cursor: initial
+    }
+
+    @media screen and (max-width: 1440px) {
+        margin-right: 0;
+    }
+    @media screen and (min-width: 1441px) {
+        margin-right: 23px;
+    }
+    li {
+        margin: 17px 12px;
+        font-size: 16px;
+        height: 25px;
+        line-height: 25px;
+        .online-icon-down-arrow {
+            font-size: 8px;
+            margin-right: 3.3px;
+        }
+        .dropdown-menu-container {
+            z-index: 11;
+        }
+        .dropdown {
+            width: 300px;
+            padding: 0;
+            z-index: 4;
+            margin-top: 20px;
+            .menu-dropdown-container {
+                background-color: white;
+                width:250px;
+                font-size: 13px;
+                z-index: 4;
+                padding: 4px;
+                box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+                border-top: 3px solid $menu-dropdown-border;
+
+            }
+        }
+
+        .menu {
+            width: 220px;
+            top: 159%;
+            li {
+                margin: 0;
+            }
+        }
+    }
+}

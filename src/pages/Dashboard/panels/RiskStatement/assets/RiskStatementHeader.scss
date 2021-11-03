@@ -1,0 +1,25 @@
+@import '../../../../../assets/scss/utils/colors';
+
+.risk-statement-header {
+    border-bottom: 1px solid $gray;
+    height: 40px;
+    padding-top: 10px;
+    .risk-statement-title {
+        
+        color: $blue;
+        padding: 8px;
+        position: relative;
+        font-size: 15px;
+        height: 100%;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 55%;
+            transform: translateX(-50%);
+            border-top: 2px solid $blue;
+            width: 24%;
+            color: $blue;
+        }
+    }
+}

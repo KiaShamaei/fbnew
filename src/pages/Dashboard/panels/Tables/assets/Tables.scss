@@ -1,0 +1,42 @@
+.portfolio-table {
+    position: relative;
+    padding-bottom: 32px;
+    footer {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        background-color: #e6f5ff;
+        height: 37px;
+        .total-value {
+            margin: auto 0;
+            margin-right: 8px;
+            font-size: 13px;
+        }
+        .losses {
+            display: flex;
+            font-size: 13px;
+        }
+    }
+}
+.order-dropdown {
+    .dropdown {
+        font-size: 13px;
+        width: 140px;
+        box-shadow: 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12), 0 1px 6px 0 rgba($color: #000000, $alpha: 0.12);
+        .checkbox {
+            margin: auto 0;
+            margin-left: 4px;
+        }
+        i {
+            font-size: 15px;
+        }
+    }
+}
+.Portfoi-tab-list {
+    li {
+        margin: 0 25px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}

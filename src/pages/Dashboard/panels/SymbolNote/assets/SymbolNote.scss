@@ -1,0 +1,53 @@
+.symbol-note {
+    .customScrollbarSNote{
+  
+        overflow: visible;
+        .scroll-thumb {
+          width: 4px !important;
+          margin-right: 2px;
+          transition: 200ms;
+          background-color: rgba(219, 218, 218, 0.7);
+        }
+        .scroll-thumb:hover {
+          background-color: #c7c7c7;
+          cursor: grab;
+          width: 8px !important;
+          transition: 50ms;
+        }
+        .scroll-thumb:active {
+          background-color: #c7c5c5;
+          cursor: grabbing;
+          width: 8px !important;
+        }
+      }
+    .empty-portfolio{
+      img{
+        margin-top: 10px;
+      }
+        width: 100%;
+        height: 100%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10%;
+        flex-direction: column;
+        
+    }
+    height: 100%;
+    .list-container {
+        height: 100%;
+        width: 100%;
+        $scroll-height: 89%;
+
+        .scroll-view {
+            height: $scroll-height !important;
+            overflow-y: scroll;
+            width: 100%;
+          
+        }
+        .scroll-tracker {
+            height: $scroll-height !important;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import "../../../../../assets/scss/utils/colors";
+@import "../../../../../assets/scss/utils/shadow";
+
+.portfolio-options {
+    i {
+        font-size: 18px;
+        color: $blue;
+    }
+
+    .online-icon-refresh {
+        margin-left: 14px;
+    }
+
+    .online-icon-share {
+        margin-left: 16px;
+    }
+}
+
+.share-dropdown {
+    box-shadow: $shadow-sm;
+    width: 150px !important;
+}
+
+
+.user-control{
+    .tab-list {
+        li {
+            margin: 0 9px;
+        }
+    }
+    ul{
+        li {
+            cursor: pointer;
+            font-size: 14px;
+            .alert-number {
+                font-size: 10px;
+                background-color: $red;
+                border-radius: 50%;
+                color: white;
+                $size: 15px;
+                height: $size;
+                width: $size;
+                text-align: center;
+                line-height: $size + 3px;
+            }
+            .underline {
+                opacity: 0;
+                height: 2px;
+                width: 20px;
+                background-color: $blue;
+                display: block;
+                margin: 0 auto;
+                margin-top: 4px;
+            }
+
+            i {
+                margin: auto;
+                font-size: 17px;
+            }
+
+            &.active {
+                .title {
+                    color: $blue;
+                }
+                i {
+                    color: $blue;
+                }
+                font-weight: 500;
+
+                .underline {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

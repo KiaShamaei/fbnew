@@ -1,0 +1,8 @@
+export const WATCH = 'WATCH'
+export const FETCH_WATCH_LIST = 'FETCH_WATCH_LIST'
+
+export const WATCH_MENU = 'WATCH_MENU'
+export const FETCH_WATCH_MENU_LIST = 'FETCH_WATCH_MENU_LIST'
+
+export const SET_ACTIVE_WATCH = 'SET_ACTIVE_WATCH'
+export const REMOVE_WATCH_ITEM = 'REMOVE_WATCH_ITEM'

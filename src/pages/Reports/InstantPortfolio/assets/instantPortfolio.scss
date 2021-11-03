@@ -1,0 +1,75 @@
+@import "../../../../assets/scss/utils/colors";
+.header {
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.1);
+}
+.main-instant {
+  .table {
+    .table-header-container {
+      .table-header {
+        height: 54px;
+      }
+    }
+  }
+  
+  height: calc(100vh - 60px);
+  background-color: white;
+  .border-radius {
+    border-radius: 5px;
+  }
+  .backgroundGray {
+    background-color: $gray;
+  }
+  .text-dark {
+    color: $black;
+  }
+  .detail-of-title {
+    font-size: 10px;
+  }
+  .font-13 {
+    font-size: 19px;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .header-style {
+    height: 60px;
+    border-radius: 5px;
+    background-color: $gray;
+  }
+  .instant-footer {
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    background-color: $ultra-ligh-gray;
+    height: 43px;
+    border-radius: 5px;
+    .instant-all {
+      width: 24%;
+    }
+    .instant-footer-value {
+      width: 44%;
+    }
+    .instant-footer-at-moment {
+      width: 23%;
+      margin-right: 6px;
+    }
+    .green {
+      color: $green;
+    }
+    .mr-px-24 {
+      margin-right: 24px;
+    }
+  }
+}
+.blue-icon {
+  color: #0c91e9;
+}
+
+.text-white {
+  color: white;
+}
+

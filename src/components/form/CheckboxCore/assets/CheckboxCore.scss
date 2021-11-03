@@ -1,0 +1,70 @@
+@import '../../../../assets/scss/utils/colors';
+
+$sizes: (sm: 14px, md: 16px, lg: 24px);
+
+
+.checkbox {
+    border: 1px solid $gray;
+    &:hover {
+        background-color: $gray;
+        .online-icon-tick {
+            color: $gray-text;
+        }
+    }
+    &.checked {
+        background-color: $blue;
+        border: 1px solid $blue;
+        .online-icon-tick {
+            color: white;
+        }
+    }
+    .online-icon-tick {
+        color: $gray;
+        display: block;
+        margin: auto;
+    }
+    @each $sizename, $size in $sizes {
+        &.#{$sizename} {
+            height: $size;
+            width: $size;
+            .online-icon-tick {
+                font-size: $size - 4;
+
+            }
+        }
+    }
+}
+.market-checkbox  {
+    border: 1px solid $gray;
+    background-color: $gray;
+    border-radius: 2px;
+    &:hover {
+        background-color: $arrow-gray;
+        .online-icon-tick {
+            color: $gray-text;
+        }
+    }
+    &.checked {
+        background-color: $blue;
+        border: 1px solid $blue;
+        .online-icon-tick {
+            color: white;
+        }
+    }
+    .online-icon-tick {
+        color: $gray;
+        display: block;
+        margin: auto;
+    }
+    @each $sizename, $size in $sizes {
+        &.#{$sizename} {
+            height: $size;
+            width: $size;
+            .online-icon-tick {
+                font-size: $size - 4;
+
+            }
+        }
+    }
+}
+

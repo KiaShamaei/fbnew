@@ -1,0 +1,12 @@
+@import '../../../assets/scss/utils/colors';
+
+.symbols-affecting-the-index {
+    font-size: 13.5px;
+    .index {
+        white-space: nowrap;
+        margin-left: 12px;
+        &::after {
+            content: ':';
+        }
+    }
+}
